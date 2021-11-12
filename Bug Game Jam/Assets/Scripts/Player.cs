@@ -6,9 +6,10 @@ public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
     public Rigidbody2D playerRb;
-    public float speed;
     public Animator animator;
     Vector2 movement;
+    public float speed;
+    public float rotationSpeed;
 
     void Start()
     {

@@ -302,6 +302,7 @@ GameObject:
   - component: {fileID: 610202445}
   - component: {fileID: 610202444}
   - component: {fileID: 610202447}
+  - component: {fileID: 610202448}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -338,8 +339,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRb: {fileID: 610202445}
-  speed: 2
   animator: {fileID: 0}
+  speed: 2
+  rotationSpeed: 2
 --- !u!50 &610202445
 Rigidbody2D:
   serializedVersion: 4
@@ -403,6 +405,18 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7181803471216563266, guid: 26a8150a86fa2dc43a0d25f73450d0e0,
     type: 3}
   bulletSpeed: 20
+--- !u!114 &610202448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610202442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7523d48783cee4fad14cf651a88dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1040637104
 GameObject:
   m_ObjectHideFlags: 0
