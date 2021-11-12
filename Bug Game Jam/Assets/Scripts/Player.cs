@@ -9,7 +9,6 @@ public class Player : MonoBehaviour
     public Animator animator;
     Vector2 movement;
     public float speed;
-    public float rotationSpeed;
 
     void Start()
     {
@@ -30,6 +29,6 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        playerRb.MovePosition(playerRb.position + movement * speed * Time.fixedDeltaTime);
+        playerRb.velocity = new Vector2(movement.x * speed, movement.y * speed);
     }
 }
