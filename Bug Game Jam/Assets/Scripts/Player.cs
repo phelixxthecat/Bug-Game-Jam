@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public Animator animator;
     Vector2 movement;
     public float speed;
+    public int health;
+    public int Maxhealth;
 
     void Start()
     {
