@@ -7,7 +7,6 @@ public class Enemy : MonoBehaviour
     public int health;
     public int Maxhealth;
     public int damageDealt;
-    public string type;
     private Rigidbody2D rb;
 
 
@@ -32,4 +31,22 @@ public class Enemy : MonoBehaviour
         }
     }
     
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.collider.tag == "Bullet") 
+        {
+            if(other.gameObject.name == "Piercing Bullet")
+            {
+
+            }
+            else if(other.gameObject.name == "Bouncing Bullets")
+            {
+
+            }
+            else 
+            {
+                --health;
+            }
+        }
+    }
 }

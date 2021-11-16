@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Collidables
   - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
