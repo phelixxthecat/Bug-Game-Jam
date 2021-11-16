@@ -4,33 +4,22 @@ using UnityEngine;
 
 public class EnemyFollow : MonoBehaviour
 {
-    public Transform playerPos;
-    private Rigidbody2D rb;
-    private Vector2 movement;
-    public float Speed;
+    public GameObject player;
+    private Rigidbody2D enemyRb;
+    public float speed;
+    private Vector3 directionToPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
-        rb = this.GetComponent<Rigidbody2D>();
+        enemyRb = GetComponent<Rigidbody2D>();
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = playerPos.position - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        rb.rotation = angle;
-        direction.Normalize();
-        movement = direction;
-    }
-
-    private void FixedUpdate()
-    {
-        moveCharacter(movement);
-    }
-
-    void moveCharacter(Vector2 direction)
-    {
-        rb.MovePosition((Vector2)transform.position + (direction * Speed * Time.deltaTime));
+        directionToPlayer = (player.transform.position - transform.position).normalized;
+        enemyRb.velocity = new Vector2(directionToPlayer.x, directionToPlayer.y) * speed;
     }
 }
