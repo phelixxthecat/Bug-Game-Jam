@@ -42,9 +42,11 @@
      <Compile Include="Assets\Scripts\FollowMouse.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyBullet.cs" />
      <Compile Include="Assets\Scripts\Shooter.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyBullet.cs" />
+     <Compile Include="Assets\Scripts\Inventory.cs" />
+     <Compile Include="Assets\Scripts\Item.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Users\Phelixx\Documents\Visual Studio 2019\2020.3.22f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public int damageDealt;
     private Rigidbody2D rb;
     public GameObject player;
+    public GameObject lootDrop;
     public Player playerScript;
 
     void Start()
@@ -22,6 +23,7 @@ public class Enemy : MonoBehaviour
     {
         if(health <= 0)
         {
+            Instantiate(lootDrop, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
         else if(health > Maxhealth)

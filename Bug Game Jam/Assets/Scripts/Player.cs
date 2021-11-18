@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public int Maxhealth;
     public GameObject currentInteractObj;
 
+
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
@@ -49,7 +50,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            print("Picked up");
+            
             Destroy(currentInteractObj);
         }
     }
