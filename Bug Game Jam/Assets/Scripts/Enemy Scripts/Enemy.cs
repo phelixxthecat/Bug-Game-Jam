@@ -8,17 +8,22 @@ public class Enemy : MonoBehaviour
     public int Maxhealth;
     public int damageDealt;
     private Rigidbody2D rb;
-
+    public GameObject player;
+    public GameObject lootDrop;
+    public Player playerScript;
 
     void Start()
     {
-        rb = this.GetComponent<Rigidbody2D>();
+        rb = this.GetComponent<Rigidbody2D>(); 
+        player = GameObject.Find("Player");
+        playerScript = player.GetComponent<Player>();
         health = Maxhealth;
     }
     void Update () 
     {
         if(health <= 0)
         {
+            Instantiate(lootDrop, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
         else if(health > Maxhealth)
@@ -47,6 +52,10 @@ public class Enemy : MonoBehaviour
             {
                 --health;
             }
+        }
+        else if(other.collider.tag == "Player")
+        {
+            playerScript.health--;
         }
     }
 }

@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public float speed;
     public int health;
     public int Maxhealth;
+    public GameObject currentInteractObj;
+
 
     void Start()
     {
@@ -32,5 +34,34 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         playerRb.velocity = new Vector2(movement.x * speed, movement.y * speed);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "Interactable")
+        {
+            currentInteractObj = other.gameObject;
+            Debug.Log("Item registered");
+            
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            
+            Destroy(currentInteractObj);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "Interactable" )
+        {
+            currentInteractObj = null;
+            Debug.Log("Item deregistered");
+            
+        }
     }
 }
