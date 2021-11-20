@@ -37,7 +37,6 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Item.cs" />
-     <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyShooting.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyFollow.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
@@ -48,6 +47,7 @@
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyBullet.cs" />
      <Compile Include="Assets\Scripts\Shooter.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
