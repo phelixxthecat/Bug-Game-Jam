@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-Base path: 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines'
-=======
 Base path: 'C:/Users/Phelixx/Documents/Visual Studio 2019/2020.3.22f1/Editor/Data', plugins path 'C:/Users/Phelixx/Documents/Visual Studio 2019/2020.3.22f1/Editor/Data/PlaybackEngines'
->>>>>>> c4275e530c5a880c12279bb335320bd974fe41e8
 Cmd: initializeCompiler
 
 Unhandled exception: Protocol error - failed to read magic number (error -2147483644, transferred 0/4)
