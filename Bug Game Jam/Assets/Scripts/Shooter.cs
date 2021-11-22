@@ -5,53 +5,138 @@ using UnityEngine;
 public class Shooter : MonoBehaviour
 {
     public Transform firePoint;
-    public GameObject bulletPrefab;
     public float bulletSpeed = 20f;
-    public bool Basic = true;
-    public bool Bouncy = false;
-    public bool Piercing = false;
-    public bool Shotgun = false;
-    public bool Sniper = false;
+    private int index;
+    private bool basic = true;
+    private bool bouncy = false;
+    private bool piercing = false;
+    private bool shotgun = false;
+    private bool sniper = false;
 
     public GameObject[] bulletType = new GameObject[5];
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        Change();
+        
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            Swap();
             Shoot();
         }
     }
 
-    void Shoot()
+    private void Shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject bullet = Instantiate(bulletType[index], firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.right * bulletSpeed, ForceMode2D.Impulse);
     }
 
-    void Swap()
+    private void Change()
     {
-          if(Basic == true)
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            if(basic == true)
             {
-                bulletPrefab = bulletType[0];
+                False();
+                sniper = true;
             }
-            else if(Bouncy == true)
+
+            else if(bouncy == true)
             {
-                bulletPrefab = bulletType[1];    
+                False();
+                basic = true;
             }
-            else if(Piercing == true)
+
+            else if(piercing == true)
             {
-                bulletPrefab = bulletType[2];
+                False();
+                bouncy = true;
             }
-            else if(Shotgun == true)
+
+            else if(shotgun == true)
             {
-                bulletPrefab = bulletType[3];  
+                False();
+                piercing = true;
             }
-            else if(Sniper == true)
+            
+            else if(sniper == true)
             {
-                bulletPrefab = bulletType[4];
+                False();
+                shotgun = true;
             }
+        }
+
+        else if(Input.GetKeyDown(KeyCode.E))
+        {
+            if(basic == true)
+            {
+                False();
+                bouncy = true;
+            }
+
+            else if(bouncy == true)
+            {
+                False();
+                piercing = true;
+            }
+
+            else if(piercing == true)
+            {
+                False();
+                shotgun = true;
+            }
+
+            else if(shotgun == true)
+            {
+                False();
+                sniper = true;
+            }
+            
+            else if(sniper == true)
+            {
+                False();
+                basic = true;
+            }
+        }
+    }
+
+    private void Swap()
+    {
+        if(basic == true)
+        {
+            index = 0;
+        }
+
+        else if(bouncy == true)
+        {
+            index = 1;  
+        }
+
+        else if(piercing == true)
+        {
+            index = 2;
+        }
+
+        else if(shotgun == true)
+        {
+            index = 3; 
+        }
+
+        else if(sniper == true)
+        {
+            index = 4;
+        }
+    }
+
+    private void False()
+    {
+        basic = false;
+        bouncy = false;
+        piercing = false;
+        shotgun = false;
+        sniper = false;
     }
 }
