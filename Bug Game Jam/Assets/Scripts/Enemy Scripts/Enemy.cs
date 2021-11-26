@@ -23,7 +23,10 @@ public class Enemy : MonoBehaviour
     {
         if(health <= 0)
         {
-            Instantiate(lootDrop, transform.position, Quaternion.identity);
+            if(lootDrop != null)
+            {
+                Instantiate(lootDrop, transform.position, Quaternion.identity);
+            }         
             Destroy(gameObject);
         }
         else if(health > Maxhealth)

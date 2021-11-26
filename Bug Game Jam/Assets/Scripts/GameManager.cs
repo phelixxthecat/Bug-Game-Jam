@@ -7,6 +7,10 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private int score;
+    private float waveCountDown = 3;
+    public int enemiesMax;
+    public Transform[] SpawnPoints;
+    public GameObject enemyPrefab;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI gameOverText;
     public TextMeshProUGUI restartButton;
@@ -15,6 +19,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         UpdateScore(0);
+        InvokeRepeating("Spawning",0f,3.0f);
+    
     }
 
     // Update is called once per frame
@@ -34,4 +40,14 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void Spawning()
+    {
+        if(enemiesMax > 0)
+        {
+            Instantiate(enemyPrefab, SpawnPoints[0].transform.position, Quaternion.identity); 
+        }  
+        --enemiesMax;
+    }
+    
 }
