@@ -3,37 +3,44 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    private int score;
+    private int health;
     private float waveCountDown = 3;
     public int enemiesMax;
     public Transform[] SpawnPoints;
     public GameObject enemyPrefab;
-    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI healthText;
     public TextMeshProUGUI gameOverText;
-    public TextMeshProUGUI restartButton;
+    public Button restartButton;
+    public Button startButton;
+    private Player MyPlayer;
+    public bool isGameActive = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        UpdateScore(0);
-        InvokeRepeating("Spawning",0f,3.0f);
-    
+        MyPlayer = GameObject.Find("Player").GetComponent<Player>();
     }
 
     // Update is called once per frame
-    public void UpdateScore(int scoreToAdd)
+    void Update()
     {
-        score += scoreToAdd;
-        scoreText.text = "Score: " + score;
+        health = MyPlayer.health;
+        healthText.text = "Health " + health;
+        GameOver();
     }
 
     public void GameOver()
     {
-        gameOverText.gameObject.SetActive(true);
-        restartButton.gameObject.SetActive(true);
+        if(health == 0)
+        {
+            gameOverText.gameObject.SetActive(true);
+            restartButton.gameObject.SetActive(true);
+            isGameActive = false;
+        }
     }
 
     public void RestartGame()
@@ -50,4 +57,10 @@ public class GameManager : MonoBehaviour
         --enemiesMax;
     }
     
+    public void StartGame()
+    {
+        isGameActive = true;
+        InvokeRepeating("Spawning",0f,3.0f);
+        startButton.gameObject.SetActive(false);
+    }
 }
