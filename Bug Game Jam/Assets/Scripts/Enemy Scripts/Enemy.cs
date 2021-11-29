@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     public int damageDealt;
     private Rigidbody2D rb;
     public GameObject player;
-    public GameObject lootDrop;
+    public GameObject lootDrop = null;
     public Player playerScript;
 
     void Start()
