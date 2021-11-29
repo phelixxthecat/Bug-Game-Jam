@@ -12,23 +12,25 @@ public class GameManager : MonoBehaviour
     public int enemiesMax;
     public Transform[] SpawnPoints;
     public GameObject enemyPrefab;
+    public GameObject player;
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI gameOverText;
     public Button restartButton;
     public Button startButton;
-    private Player MyPlayer;
+    public Player playerScript;
     public bool isGameActive = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        MyPlayer = GameObject.Find("Player").GetComponent<Player>();
+        playerScript = GameObject.Find("Player").GetComponent<Player>();
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        health = MyPlayer.health;
+        health = playerScript.health;
         healthText.text = "Health " + health;
         GameOver();
     }
@@ -62,5 +64,6 @@ public class GameManager : MonoBehaviour
         isGameActive = true;
         InvokeRepeating("Spawning",0f,3.0f);
         startButton.gameObject.SetActive(false);
+        player.gameObject.SetActive(true);
     }
 }
