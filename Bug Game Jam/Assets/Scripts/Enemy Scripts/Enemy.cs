@@ -59,6 +59,7 @@ public class Enemy : MonoBehaviour
         else if(other.collider.tag == "Player")
         {
             playerScript.health--;
+            Destroy(gameObject);
         }
     }
 }

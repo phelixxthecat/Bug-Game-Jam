@@ -8,8 +8,8 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     private int health;
-    private float waveCountDown = 3;
-    public int enemiesMax;
+    public int enemiesMax; 
+    public int waveWaitTime;
     public Transform[] SpawnPoints;
     public GameObject enemyPrefab;
     public GameObject player;
