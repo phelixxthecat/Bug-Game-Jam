@@ -8,10 +8,6 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     private int health;
-    public int enemiesMax; 
-    public int waveWaitTime;
-    public Transform[] SpawnPoints;
-    public GameObject enemyPrefab;
     public GameObject player;
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI gameOverText;
@@ -50,19 +46,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void Spawning()
-    {
-        if(enemiesMax > 0)
-        {
-            Instantiate(enemyPrefab, SpawnPoints[0].transform.position, Quaternion.identity); 
-        }  
-        --enemiesMax;
-    }
+    
     
     public void StartGame()
     {
         isGameActive = true;
-        InvokeRepeating("Spawning",0f,3.0f);
         startButton.gameObject.SetActive(false);
         player.gameObject.SetActive(true);
     }
