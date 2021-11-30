@@ -43,17 +43,17 @@ public class Enemy : MonoBehaviour
     {
         if(other.collider.tag == "Bullet") 
         {
-            if(other.gameObject.name == "Piercing Bullet")
+            if(other.gameObject.name == "SniperBullet")
             {
-
+                health -= 5;
             }
-            else if(other.gameObject.name == "Bouncing Bullets")
+            else if(other.gameObject.name == "ShotgunBullets")
             {
-
+                health -= 2;
             }
             else 
             {
-                --health;
+                health--;
             }
         }
         else if(other.collider.tag == "Player")

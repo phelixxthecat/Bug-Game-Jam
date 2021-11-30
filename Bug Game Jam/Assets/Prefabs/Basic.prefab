@@ -115,6 +115,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTime: 2
+  damage: 1
+  enemyScript: {fileID: 36175470688822824, guid: 6641058a3b86e4445bb25eb63c9702fe,
+    type: 3}
 --- !u!50 &1112523603255682898
 Rigidbody2D:
   serializedVersion: 4

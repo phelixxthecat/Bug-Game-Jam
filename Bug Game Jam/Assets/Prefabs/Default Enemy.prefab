@@ -73,7 +73,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 9999
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -94,8 +94,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a5dd50649a4d444eac622f605f3d6ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
-  Maxhealth: 1
+  health: 3
+  Maxhealth: 3
   damageDealt: 0
   player: {fileID: 0}
   lootDrop: {fileID: 0}
