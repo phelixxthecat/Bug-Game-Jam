@@ -8,9 +8,11 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     private int health;
+    public int bossesDefeated = 0;
     public GameObject player;
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI gameOverText;
+    public TextMeshProUGUI congratsText;
     public Button restartButton;
     public Button startButton;
     public Player playerScript;
@@ -28,6 +30,7 @@ public class GameManager : MonoBehaviour
     {
         health = playerScript.health;
         healthText.text = "Health " + health;
+        Win();
         GameOver();
     }
 
@@ -53,5 +56,16 @@ public class GameManager : MonoBehaviour
         isGameActive = true;
         startButton.gameObject.SetActive(false);
         player.gameObject.SetActive(true);
+    }
+
+    public void Win()
+    {
+        if(bossesDefeated == 3)
+        {
+            congratsText.gameObject.SetActive(true);
+            restartButton.gameObject.SetActive(true);
+            isGameActive = false;
+        }
+        
     }
 }

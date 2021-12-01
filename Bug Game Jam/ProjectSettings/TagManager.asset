@@ -14,6 +14,7 @@ TagManager:
   - Shotgun
   - Sniper
   - Basic
+  - Boss
   layers:
   - Default
   - TransparentFX

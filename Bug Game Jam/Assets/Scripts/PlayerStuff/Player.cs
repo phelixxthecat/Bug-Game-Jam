@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
     public Rigidbody2D playerRb;
+    public GameObject player;
     Vector2 movement;
     public Shooter shooterScript;
     public float speed;
@@ -26,6 +27,10 @@ public class Player : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical"); 
+        if(health <= 0)
+        {
+            Destroy(player);
+        }
     }
 
     void FixedUpdate()

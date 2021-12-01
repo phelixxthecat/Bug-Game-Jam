@@ -29,7 +29,7 @@ public class EnemyBullet : MonoBehaviour
             playerScript.health -= damageDealt;
             Destroy(gameObject);
         }
-        else if(targetTime <= 0.0f || other.gameObject.tag == "Collidables" || other.gameObject.tag == "Enemy")
+        else if(targetTime <= 0.0f || other.gameObject.tag == "Collidables")
         {
             Destroy(gameObject);
         }

@@ -7,10 +7,13 @@ public class Enemy : MonoBehaviour
     public int health;
     public int Maxhealth;
     public int damageDealt;
-    private Rigidbody2D rb;
+    private Rigidbody2D rb = null;
     public GameObject player;
     public GameObject lootDrop = null;
     public Player playerScript;
+    public GameObject GM;
+    public GameManager GMscript;
+    public bool inTrigger;
 
     void Start()
     {
@@ -18,6 +21,8 @@ public class Enemy : MonoBehaviour
         player = GameObject.Find("Player");
         playerScript = player.GetComponent<Player>();
         health = Maxhealth;
+        GM = GameObject.Find("Game Manager");
+        GMscript = GM.GetComponent<GameManager>();
     }
     void Update () 
     {
@@ -27,20 +32,24 @@ public class Enemy : MonoBehaviour
             {
                 Instantiate(lootDrop, transform.position, Quaternion.identity);
             }         
+            inTrigger = false;
+            if(gameObject.tag == "Boss")
+            {
+                playerScript.health = 10;
+                ++GMscript.bossesDefeated;
+            }
             Destroy(gameObject);
         }
         else if(health > Maxhealth)
         {
             health = Maxhealth;
         }
-        else
-        {
-            //Health bar UI here
-        }
+
     }
     
     void OnCollisionEnter2D(Collision2D other)
     {
+
         if(other.collider.tag == "Basic") 
         {
             health--;
@@ -55,10 +64,15 @@ public class Enemy : MonoBehaviour
             health -= 2;
         }
         
-        else if(other.collider.tag == "Player")
+        else if(other.collider.tag == "Player" )
         {
             playerScript.health--;
-            Destroy(gameObject);
-        }
+            if(gameObject.tag != "Boss")
+            {
+                Destroy(gameObject);
+            }   
+        }   
+        
     }
 }
+
