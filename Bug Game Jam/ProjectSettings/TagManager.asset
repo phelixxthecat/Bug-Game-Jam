@@ -11,6 +11,9 @@ TagManager:
   - Inventory
   - WaveManager
   - EnemyBullet
+  - Shotgun
+  - Sniper
+  - Basic
   layers:
   - Default
   - TransparentFX

@@ -20,7 +20,7 @@ public class Bullet : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.collider.tag == "Collidables" || other.collider.tag == "Bullet")
+        if(other.collider.tag == "Collidables")
         {
             Destroy(gameObject);
         }

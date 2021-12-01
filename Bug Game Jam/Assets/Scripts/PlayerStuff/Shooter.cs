@@ -8,11 +8,9 @@ public class Shooter : MonoBehaviour
     public float bulletSpeed = 20f;
     private int index;
     private bool basic = true;
-    private bool bouncy = false;
-    private bool piercing = false;
     private bool shotgun = false;
     private bool sniper = false;
-
+    private double NextShot = 0;
     public GameObject[] bulletType = new GameObject[5];
 
     // Update is called once per frame
@@ -20,7 +18,7 @@ public class Shooter : MonoBehaviour
     {
         Change();
         
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && Time.time > NextShot)
         {
             Swap();
             Shoot();
@@ -29,9 +27,35 @@ public class Shooter : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject bullet = Instantiate(bulletType[index], firePoint.position, firePoint.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.right * bulletSpeed, ForceMode2D.Impulse);
+        if(basic == true)
+        {
+            GameObject bullet = Instantiate(bulletType[index], firePoint.position, firePoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce(firePoint.right * bulletSpeed, ForceMode2D.Impulse);
+            NextShot = Time.time + .25; 
+        }
+
+        else if(shotgun == true)
+        {
+            GameObject bullet = Instantiate(bulletType[index], firePoint.position, firePoint.rotation);
+            GameObject bullet2 = Instantiate(bulletType[index], firePoint.position, firePoint.rotation);
+            GameObject bullet3 = Instantiate(bulletType[index], firePoint.position, firePoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            Rigidbody2D rb2 = bullet2.GetComponent<Rigidbody2D>();
+            Rigidbody2D rb3 = bullet3.GetComponent<Rigidbody2D>();
+            rb.AddForce(new Vector3(firePoint.right.x - Random.Range(0, .5f), firePoint.right.y + Random.Range(0, .5f), firePoint.right.z) * bulletSpeed * .5f, ForceMode2D.Impulse);
+            rb2.AddForce(firePoint.right * bulletSpeed, ForceMode2D.Impulse);
+            rb3.AddForce(new Vector3(firePoint.right.x + Random.Range(0, .5f), firePoint.right.y - Random.Range(0, .5f), firePoint.right.z) * bulletSpeed * .5f, ForceMode2D.Impulse);
+            NextShot = Time.time + .5; 
+        }
+
+        else if(sniper == true)
+        {
+            GameObject bullet = Instantiate(bulletType[index], firePoint.position, firePoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce(firePoint.right * bulletSpeed * 2, ForceMode2D.Impulse);
+            NextShot = Time.time + 1; 
+        }
     }
 
     private void Change()
@@ -41,31 +65,19 @@ public class Shooter : MonoBehaviour
             if(basic == true)
             {
                 False();
-                sniper = true;
-            }
-
-            else if(bouncy == true)
-            {
-                False();
-                basic = true;
-            }
-
-            else if(piercing == true)
-            {
-                False();
-                bouncy = true;
+                shotgun = true;
             }
 
             else if(shotgun == true)
             {
                 False();
-                piercing = true;
+                sniper = true;
             }
-            
+
             else if(sniper == true)
             {
                 False();
-                shotgun = true;
+                basic = true;
             }
         }
 
@@ -74,28 +86,16 @@ public class Shooter : MonoBehaviour
             if(basic == true)
             {
                 False();
-                bouncy = true;
+                sniper = true;
             }
 
-            else if(bouncy == true)
-            {
-                False();
-                piercing = true;
-            }
-
-            else if(piercing == true)
+            else if(sniper == true)
             {
                 False();
                 shotgun = true;
             }
 
             else if(shotgun == true)
-            {
-                False();
-                sniper = true;
-            }
-            
-            else if(sniper == true)
             {
                 False();
                 basic = true;
@@ -110,32 +110,20 @@ public class Shooter : MonoBehaviour
             index = 0;
         }
 
-        else if(bouncy == true)
+        else if(shotgun == true)
         {
             index = 1;  
         }
 
-        else if(piercing == true)
-        {
-            index = 2;
-        }
-
-        else if(shotgun == true)
-        {
-            index = 3; 
-        }
-
         else if(sniper == true)
         {
-            index = 4;
+            index = 2;
         }
     }
 
     private void False()
     {
         basic = false;
-        bouncy = false;
-        piercing = false;
         shotgun = false;
         sniper = false;
     }

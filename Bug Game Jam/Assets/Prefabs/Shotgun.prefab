@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9027201930494764059}
   m_Layer: 0
   m_Name: Shotgun
-  m_TagString: Bullet
+  m_TagString: Shotgun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62fcb01696b6ee43aa8c01c4d4cf7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTime: 2
+  targetTime: 0.35
+  damage: 1
 --- !u!50 &9027201930494764059
 Rigidbody2D:
   serializedVersion: 4

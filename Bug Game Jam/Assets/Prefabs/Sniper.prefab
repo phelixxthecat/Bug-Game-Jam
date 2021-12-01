@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1252559831401362281}
   m_Layer: 0
   m_Name: Sniper
-  m_TagString: Bullet
+  m_TagString: Sniper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTime: 2
+  damage: 1
 --- !u!50 &1252559831401362281
 Rigidbody2D:
   serializedVersion: 4
