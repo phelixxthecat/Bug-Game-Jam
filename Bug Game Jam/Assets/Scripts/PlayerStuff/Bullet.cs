@@ -5,7 +5,6 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float targetTime = 1.0f;
-    public int damage = 1;
 
     void Update()
     {
