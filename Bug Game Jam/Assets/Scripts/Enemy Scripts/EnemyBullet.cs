@@ -22,14 +22,14 @@ public class EnemyBullet : MonoBehaviour
 
 
     }
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.collider.tag == "Player") 
+        if(other.gameObject.tag == "Player") 
         {
             playerScript.health -= damageDealt;
             Destroy(gameObject);
         }
-        else if(targetTime <= 0.0f || other.collider.tag == "Collidables" || other.collider.tag == "Enemy")
+        else if(targetTime <= 0.0f || other.gameObject.tag == "Collidables" || other.gameObject.tag == "Enemy")
         {
             Destroy(gameObject);
         }

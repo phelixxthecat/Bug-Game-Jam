@@ -585,7 +585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRb: {fileID: 472044792}
   shooterScript: {fileID: 472044791}
-  speed: 2
+  speed: 20
   health: 5
   Maxhealth: 5
   ammoType: Basic Bullet

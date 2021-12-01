@@ -10,6 +10,7 @@ TagManager:
   - Interactable
   - Inventory
   - WaveManager
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
