@@ -80,7 +80,6 @@ public class Shooter : MonoBehaviour
                 basic = true;
             }
         }
-
         else if(Input.GetKeyDown(KeyCode.E))
         {
             if(basic == true)

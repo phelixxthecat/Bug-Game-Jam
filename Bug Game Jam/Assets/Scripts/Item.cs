@@ -9,6 +9,11 @@ public class Item : MonoBehaviour
    
     void Update()
     {
+        Timer();
+    }
+
+    void Timer()
+    {
         if (timeRemaining > 0)
         {
             timeRemaining -= Time.deltaTime;
@@ -18,5 +23,7 @@ public class Item : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    
 
 }
