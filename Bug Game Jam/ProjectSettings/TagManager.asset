@@ -15,6 +15,7 @@ TagManager:
   - Sniper
   - Basic
   - Boss
+  - Full Auto
   layers:
   - Default
   - TransparentFX
