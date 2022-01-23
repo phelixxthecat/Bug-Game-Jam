@@ -9,7 +9,7 @@ public class Shooter : MonoBehaviour
     private int bulletCount;
     private int index;
     private bool basic = true;
-    private bool shotgun = true;
+    private bool shotgun = false;
     private bool sniper = false;
     private bool fullAuto = false;
     private bool bouncy = false;

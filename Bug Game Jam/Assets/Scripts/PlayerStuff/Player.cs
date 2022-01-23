@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public float speed;
     public int health;
     public int Maxhealth;
-    public string ammoType = "Basic";
+
     
 
 

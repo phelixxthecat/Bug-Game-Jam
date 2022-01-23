@@ -7,7 +7,6 @@ TagManager:
   - Collidables
   - Enemy
   - Bullet
-  - Interactable
   - Inventory
   - WaveManager
   - EnemyBullet
