@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1061504965670439433}
   - component: {fileID: 1061504965670439434}
   - component: {fileID: 5262158097237072475}
+  - component: {fileID: 6238850210023834774}
   m_Layer: 0
   m_Name: Full Auto Ammo Pack
   m_TagString: Interactable
@@ -145,3 +146,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9375, y: 0.9375}
   m_EdgeRadius: 0
+--- !u!114 &6238850210023834774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061504965670439435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ddbaf74d992bc40972c6c634450d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

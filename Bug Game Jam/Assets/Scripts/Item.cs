@@ -6,6 +6,7 @@ public class Item : MonoBehaviour
 {
     // Start is called before the first frame update
    public float timeRemaining = 10;
+
    
     void Update()
     {
@@ -26,8 +27,7 @@ public class Item : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        Shooter shooterScript = col.GetComponent<Shooter>();
-        
+        Destroy(gameObject);
     }
-
 }
+

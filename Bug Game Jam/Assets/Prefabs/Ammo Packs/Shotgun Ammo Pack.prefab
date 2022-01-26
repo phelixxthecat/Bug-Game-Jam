@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4133139586273172412}
   - component: {fileID: 4133139586273172413}
   - component: {fileID: 2533741610422771524}
+  - component: {fileID: 8919075151040031270}
   m_Layer: 0
   m_Name: Shotgun Ammo Pack
   m_TagString: Interactable
@@ -145,3 +146,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8919075151040031270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4133139586273172402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c4ae522a3d07645be5e302becd6a61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

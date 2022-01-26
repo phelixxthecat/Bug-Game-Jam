@@ -6,14 +6,14 @@ public class Shooter : MonoBehaviour
 {
     public Transform firePoint;
     public float bulletSpeed = 20f;
-    private int bulletCount;
+    private int bulletCount = 15;
     private int index;
     private bool basic = true;
-    private bool shotgun = false;
-    private bool sniper = false;
-    private bool fullAuto = false;
-    private bool bouncy = false;
-    private double NextShot = 0;
+    public bool shotgun = false;
+    public bool sniper = false;
+    public bool fullAuto = false;
+    public bool bouncy = false;
+    public double NextShot = 0;
     public GameObject[] bulletType = new GameObject[5];
     public GameObject currentBullet = null;
 
@@ -68,19 +68,24 @@ public class Shooter : MonoBehaviour
     private void Change()
     {
         if(Input.GetKeyDown(KeyCode.Alpha1) && basic){
-            Equip(0);
+            index = 0;
+            Equip(index);
         }
         else if(Input.GetKeyDown(KeyCode.Alpha2) && shotgun){
-            Equip(1);
+            index = 1;
+            Equip(index);
         }
         else if(Input.GetKeyDown(KeyCode.Alpha3) && sniper){
-            Equip(2);
+            index = 2;
+            Equip(index);
         }
-        else if(Input.GetKeyDown(KeyCode.Alpha3) && fullAuto){
-            Equip(3);
+        else if(Input.GetKeyDown(KeyCode.Alpha4) && fullAuto){
+            index = 3;
+            Equip(index);
         }
-        else if(Input.GetKeyDown(KeyCode.Alpha3) && bouncy){
-            Equip(4);
+        else if(Input.GetKeyDown(KeyCode.Alpha5) && bouncy){
+            index = 4;
+            Equip(index);
         }
     }
 

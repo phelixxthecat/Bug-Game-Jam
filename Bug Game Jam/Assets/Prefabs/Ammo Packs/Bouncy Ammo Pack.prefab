@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5076711827413625216}
   - component: {fileID: 5076711827413625223}
   - component: {fileID: 2043567324928074619}
+  - component: {fileID: 4056689489434480778}
   m_Layer: 0
   m_Name: Bouncy Ammo Pack
   m_TagString: Interactable
@@ -145,3 +146,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9375, y: 0.9375}
   m_EdgeRadius: 0
+--- !u!114 &4056689489434480778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5076711827413625222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076e123bc87e37a4c928ec093fc52016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

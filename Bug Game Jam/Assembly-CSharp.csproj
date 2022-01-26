@@ -47,11 +47,15 @@
      <Compile Include="Assets\Scripts\PlayerStuff\Player.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyBullet.cs" />
+     <Compile Include="Assets\Scripts\Teleporter.cs" />
      <Compile Include="Assets\Scripts\WaveSystem.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\Shooter.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\WaveStarter.cs" />
-     <Compile Include="Assets\Scripts\Teleporter.cs" />
+     <Compile Include="Assets\Scripts\AmmoScripts\ShotgunAmmo.cs" />
+     <Compile Include="Assets\Scripts\AmmoScripts\BouncyAmmo.cs" />
+     <Compile Include="Assets\Scripts\AmmoScripts\FullAutoAmmo.cs" />
+     <Compile Include="Assets\Scripts\AmmoScripts\SniperAmmo.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
