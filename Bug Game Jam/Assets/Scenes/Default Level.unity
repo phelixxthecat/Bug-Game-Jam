@@ -991,6 +991,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 2056257623}
   bulletSpeed: 1
+  shotgun: 0
+  sniper: 0
+  fullAuto: 0
+  bouncy: 0
+  NextShot: 0
   bulletType:
   - {fileID: 7181803471216563266, guid: 26a8150a86fa2dc43a0d25f73450d0e0, type: 3}
   - {fileID: 2046371493793173965, guid: 49a24851c262bfb4fb95fcd3299dfee3, type: 3}
