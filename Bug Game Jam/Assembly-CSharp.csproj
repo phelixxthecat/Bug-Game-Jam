@@ -36,26 +36,29 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Item.cs" />
+     <Compile Include="Assets\Scripts\Items\Item.cs" />
      <Compile Include="Assets\Scripts\AudioStuff\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyShooting.cs" />
+     <Compile Include="Assets\Scripts\AmmoScripts\SniperAmmo.cs" />
      <Compile Include="Assets\Scripts\AudioStuff\SwitchMusicTrigger.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyFollow.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\Bullet.cs" />
+     <Compile Include="Assets\Scripts\AmmoScripts\ShotgunAmmo.cs" />
+     <Compile Include="Assets\Scripts\AmmoScripts\FullAutoAmmo.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\FollowMouse.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\Player.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyBullet.cs" />
+     <Compile Include="Assets\Scripts\AmmoScripts\BouncyAmmo.cs" />
      <Compile Include="Assets\Scripts\Teleporter.cs" />
      <Compile Include="Assets\Scripts\WaveSystem.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\Shooter.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\WaveStarter.cs" />
-     <Compile Include="Assets\Scripts\AmmoScripts\ShotgunAmmo.cs" />
-     <Compile Include="Assets\Scripts\AmmoScripts\BouncyAmmo.cs" />
-     <Compile Include="Assets\Scripts\AmmoScripts\FullAutoAmmo.cs" />
-     <Compile Include="Assets\Scripts\AmmoScripts\SniperAmmo.cs" />
+     <Compile Include="Assets\Scripts\Items\HealthPack.cs" />
+     <Compile Include="Assets\Scripts\Items\Dash Ability.cs" />
+     <Compile Include="Assets\Scripts\Items\Key.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
