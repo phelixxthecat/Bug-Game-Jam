@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class HealthPack : MonoBehaviour
 {
+    GameObject player;
+    Player playerScript;
     void OnTriggerEnter2D(Collider2D col)
     {
-        rb = this.GetComponent<Rigidbody2D>(); 
         player = GameObject.Find("Player");
         playerScript = player.GetComponent<Player>();
+        playerScript.health += 2;
     }
 }

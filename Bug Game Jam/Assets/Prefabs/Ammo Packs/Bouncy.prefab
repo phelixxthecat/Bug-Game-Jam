@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTime: 2
+  bouncy: 0
 --- !u!50 &3583408972913090690
 Rigidbody2D:
   serializedVersion: 4
@@ -128,7 +129,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 8550656165578274610}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ccb0aa0e8d7f4f74794a951dc5257058, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
