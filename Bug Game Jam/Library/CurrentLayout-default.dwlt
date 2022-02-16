@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Project
   m_RootView: {fileID: 10}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 36
+  controlID: 20
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 91
+  controlID: 45
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 81
+  controlID: 44
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -344,13 +344,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/PlayerStuff
+    - Assets/Prefabs/Items
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/PlayerStuff
+  - Assets/Prefabs/Items
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Phelixx\Desktop\Folder Games (By Me)\Bug-Game-Jam\Bug
     Game Jam
@@ -358,9 +358,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c6460000
-    m_LastClickedID: 18118
-    m_ExpandedIDs: 00000000a2460000b0460000b646000000ca9a3b
+    m_SelectedIDs: c2460000
+    m_LastClickedID: 18114
+    m_ExpandedIDs: 0000000096460000a0460000a646000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -388,7 +388,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a2460000
+    m_ExpandedIDs: 0000000096460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -511,23 +511,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 36450000
+      m_SelectedIDs: c2460000
       m_LastClickedID: 0
-      m_ExpandedIDs: f8faffff
+      m_ExpandedIDs: 46fbffff62430000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Health Pack
-        m_OriginalName: Health Pack
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 17450
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -574,9 +574,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.815533, y: 0.5690726, z: -0.079428494}
+    m_Target: {x: -6.20282, y: 1.537097, z: -1.1158355}
     speed: 2
-    m_Value: {x: -4.815533, y: 0.5690726, z: -0.079428494}
+    m_Value: {x: -89.25, y: 164.75, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -627,9 +627,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1.2470456
+    m_Target: 9.093505
     speed: 2
-    m_Value: 1.2470456
+    m_Value: 2.8301942
   m_Ortho:
     m_Target: 1
     speed: 2

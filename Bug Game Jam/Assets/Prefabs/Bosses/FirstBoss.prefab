@@ -120,8 +120,12 @@ MonoBehaviour:
   Maxhealth: 50
   damageDealt: 3
   player: {fileID: 0}
-  lootDrop: {fileID: 0}
+  lootDrop: {fileID: 4133139586273172402, guid: 3781121a39f8afd42bb3f7172d03c21d,
+    type: 3}
   playerScript: {fileID: 0}
+  GM: {fileID: 0}
+  GMscript: {fileID: 0}
+  inTrigger: 0
 --- !u!61 &1267043626156064564
 BoxCollider2D:
   m_ObjectHideFlags: 0
