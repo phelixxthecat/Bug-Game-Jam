@@ -92,7 +92,7 @@ public class Shooter : MonoBehaviour
 
     private void BulletSpawning(float bulletTime, float bulletSpeed)
     {
-        GameObject bullet = Instantiate(bulletType[index], firePoint.position, firePoint.rotation);
+        GameObject bullet = Instantiate(bulletType[index], firePoint.position, firePoint.transform.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.right * bulletSpeed, ForceMode2D.Impulse);
         NextShot = Time.time + bulletTime; 

@@ -9,27 +9,37 @@ public class WaveStarter : MonoBehaviour
     public int waveWaitTime;
     private int RandomSpawnPos;
     private int enemyPrefabNum;
-    public Transform[] SpawnPoints;
+    private Vector3 roomSize;
     public GameObject[] enemyPrefabs;
     public GameObject doorOne;
-    public Enemy enemy;
+    public GameObject room;
+    private Enemy enemy;
+    private BoxCollider2D collider;
+    private float xMin;
+    private float xMax;
+    private float yMin;
+    private float yMax;
+
     
     
     private void Start()
     {
-
+        room = this.gameObject;
+        roomDimensions(room, out yMax, out yMin, out xMax, out xMin);
     }
 
     public void Spawning()
     {   
         if(enemiesMax > 0)
         {
-            RandomSpawnPos = Random.Range(0,SpawnPoints.Length);
+ 
+            float RandomSpawnPosX = Random.Range(xMin,xMax);
+            float RandomSpawnPosY = Random.Range(yMin,yMax);
             enemyPrefabNum = Random.Range(0, enemyPrefabs.Length);
-            Instantiate(enemyPrefabs[enemyPrefabNum], SpawnPoints[RandomSpawnPos].transform.position, Quaternion.identity); 
+            Instantiate(enemyPrefabs[enemyPrefabNum], new Vector2(RandomSpawnPosX, RandomSpawnPosY), Quaternion.identity); 
             enemiesMax--;
             enemiesAlive++;
-        } 
+        }
         if(enemiesAlive <= 0 && enemiesMax <= 0)
         {
             Destroy(doorOne);
@@ -40,6 +50,19 @@ public class WaveStarter : MonoBehaviour
         }
   
     }
+
+    public void roomDimensions(GameObject room, out float topLen, out float botLen, out float rightLen, out float leftLen)
+    {
+        collider = room.GetComponent<BoxCollider2D>();
+        roomSize = collider.size;
+        Vector2 worldPos = room.transform.TransformPoint(collider.offset);
+
+        topLen = worldPos.y + (roomSize.y / 2);
+        botLen = worldPos.y - (roomSize.y / 2);
+        rightLen = worldPos.x + (roomSize.x / 2);
+        leftLen = worldPos.x - (roomSize.x / 2);
+    }
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if(collider.name == "Player")
@@ -66,13 +89,4 @@ public class WaveStarter : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collider)
-    {
-        if(collider.tag == "Enemy" || collider.tag == "Boss")
-        {
-            enemy = collider.GetComponent<Enemy>();
-            enemy.inTrigger = true;
-        }
-    }
-    
 }
