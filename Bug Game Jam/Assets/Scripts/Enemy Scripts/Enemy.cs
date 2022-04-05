@@ -53,15 +53,18 @@ public class Enemy : MonoBehaviour
         if(other.collider.tag == "Basic") 
         {
             health--;
+            Destroy(other.gameObject);
         }
         else if(other.gameObject.tag == "Sniper")
         {
             health -= 5;
+            Destroy(other.gameObject);
         }
         
         else if(other.gameObject.tag == "Shotgun")
         {
             health -= 2;
+            Destroy(other.gameObject);
         }
         
         else if(other.collider.tag == "Player" )

@@ -50,19 +50,15 @@ public class Shooter : MonoBehaviour
         {
             BulletSpawning(1.5f, bulletSpeed * 2);
         }
-        
+
         else if(fullAuto && currentBullet == bulletType[3] )
         {
-            while(Input.GetKeyDown(KeyCode.Space) && bulletCount > 0)
-            {
-                StartCoroutine(ExampleCoroutine());
-                --bulletCount;
-            }
-            bulletCount = 15;
+            BulletSpawning(.5f, bulletSpeed);
         }
+        
         else if(bouncy && currentBullet == bulletType[4])
         {
-            BulletSpawning(1.5f, bulletSpeed); 
+            BulletSpawning(2f, bulletSpeed); 
         }
     }
 
@@ -103,9 +99,4 @@ public class Shooter : MonoBehaviour
         currentBullet = bulletType[bullet];
     }
 
-    IEnumerator ExampleCoroutine()
-    {
-        BulletSpawning(.1f, bulletSpeed);
-        yield return new WaitForSeconds(1);
-    }
 }
