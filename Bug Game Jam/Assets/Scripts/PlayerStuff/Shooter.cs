@@ -53,12 +53,19 @@ public class Shooter : MonoBehaviour
 
         else if(fullAuto && currentBullet == bulletType[3] )
         {
-            BulletSpawning(.5f, bulletSpeed);
+            for(int i = 25; i > 0; i--)
+            {
+                Debug.Log("Shoot");
+                BulletSpawning(.5f, bulletSpeed);
+                Debug.Log("Shoot full auto");
+                Delay();  
+                Debug.Log("Shoot full auto");
+            }       
         }
         
         else if(bouncy && currentBullet == bulletType[4])
         {
-            BulletSpawning(2f, bulletSpeed); 
+            BulletSpawning(1f, bulletSpeed);
         }
     }
 
@@ -99,4 +106,9 @@ public class Shooter : MonoBehaviour
         currentBullet = bulletType[bullet];
     }
 
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.05f);
+         Debug.Log("Delay");
+    }
 }
