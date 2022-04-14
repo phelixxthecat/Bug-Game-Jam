@@ -14,5 +14,6 @@ public class Teleporter : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         col.transform.position = teleportPos.transform.position;
+         Camera.main.transform.position = teleportPos.transform.position;
     }
 }
