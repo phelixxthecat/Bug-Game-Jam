@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public GameObject player;
     public Transform firePoint;
     Vector2 movement;
+    public float targetTime = 3.0f;
     public float speed = 5;
     public float activeSpeed;
     public float dashSpeed = 10;
@@ -23,7 +24,6 @@ public class Player : MonoBehaviour
     {
         playerRb = GetComponent<Rigidbody2D>();
         activeSpeed = speed;
-
     }
     
 
@@ -32,9 +32,20 @@ public class Player : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical"); 
+
         if(health <= 0)
         {
             Destroy(player);
+        }
+
+        if (targetTime > 0)
+        {
+            targetTime -= Time.deltaTime;
+        }
+        else if(!dash && targetTime <= 0)
+        {
+            dash = true;
+
         }
     }
 
@@ -42,25 +53,17 @@ public class Player : MonoBehaviour
     {
         if(dash && Input.GetKeyDown(KeyCode.F))
         {
-            activeSpeed = dashSpeed;
-            dashCount = dashDelay;
-            dash = false;
             Debug.Log("dashing");
+            activeSpeed = dashSpeed;
+            targetTime = 2.0f;
+            dash = false;
         }
-        else if(!dash && dashCount > 0)
+        else if (dash == false && targetTime < 1.5f)
         {
             Debug.Log("not dashing");
             activeSpeed = speed;
         }
 
- 
-        if(dashCount > 0)
-        {
-            Debug.Log("dashing timer");
-            dashCount -= Time.deltaTime;
-        }
-        playerRb.velocity = new Vector2(movement.x * activeSpeed, movement.y * activeSpeed);
-        
-
+        playerRb.velocity = new Vector2(movement.x * activeSpeed, movement.y * activeSpeed);   
     }
 }

@@ -58,6 +58,7 @@ public class Shooter : MonoBehaviour
                 Debug.Log("Shoot");
                 BulletSpawning(.5f, bulletSpeed);
                 Debug.Log("Shoot full auto");
+                new WaitForSeconds(0.05f);
                 Delay();  
                 Debug.Log("Shoot full auto");
             }       

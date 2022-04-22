@@ -13,11 +13,9 @@ public class Wall : MonoBehaviour
     // Update is called once per frame
     void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log("hit");
         if(col.gameObject.tag == "Basic" || col.gameObject.tag == "EnemyBullet" ||col.gameObject.tag == "Full Auto" ||col.gameObject.tag == "Sniper" ||col.gameObject.tag == "Shotgun")
         {
             Destroy(col.gameObject);
-            Debug.Log("Fuck u i guess");
         }
     }
 }
