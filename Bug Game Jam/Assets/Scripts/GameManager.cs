@@ -29,14 +29,13 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         health = playerScript.health;
-        healthText.text = "Health " + health;
         Win();
         GameOver();
     }
 
     public void GameOver()
     {
-        if(health == 0)
+        if(health <= 0)
         {
             gameOverText.gameObject.SetActive(true);
             restartButton.gameObject.SetActive(true);

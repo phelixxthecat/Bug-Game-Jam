@@ -26,7 +26,7 @@ public class EnemyBullet : MonoBehaviour
     {
         if(other.gameObject.tag == "Player") 
         {
-            playerScript.health -= damageDealt;
+            playerScript.TakeDamage(damageDealt);
             Destroy(gameObject);
         }
         else if(targetTime <= 0.0f || other.gameObject.tag == "Collidables")

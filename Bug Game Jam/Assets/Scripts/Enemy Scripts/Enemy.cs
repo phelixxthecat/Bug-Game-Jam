@@ -69,7 +69,7 @@ public class Enemy : MonoBehaviour
         
         else if(other.collider.tag == "Player" )
         {
-            playerScript.health--;
+            playerScript.TakeDamage(damageDealt);
             if(gameObject.tag != "Boss")
             {
                 Destroy(gameObject);

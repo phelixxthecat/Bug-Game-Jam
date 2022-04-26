@@ -9,21 +9,24 @@ public class Player : MonoBehaviour
     public GameObject player;
     public Transform firePoint;
     Vector2 movement;
+    public HealthBar healthBar;
     public float targetTime = 3.0f;
     public float speed = 5;
     public float activeSpeed;
     public float dashSpeed = 10;
     public bool dash = false;
     public int health;
-    public int Maxhealth;
+    public int maxHealth;
     public float dashCount = 0;
     private float dashDelay = 2;
+
 
 
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
         activeSpeed = speed;
+        healthBar.SetMaxHealth(maxHealth);
     }
     
 
@@ -53,17 +56,22 @@ public class Player : MonoBehaviour
     {
         if(dash && Input.GetKeyDown(KeyCode.F))
         {
-            Debug.Log("dashing");
             activeSpeed = dashSpeed;
             targetTime = 2.0f;
             dash = false;
         }
         else if (dash == false && targetTime < 1.5f)
         {
-            Debug.Log("not dashing");
             activeSpeed = speed;
         }
 
-        playerRb.velocity = new Vector2(movement.x * activeSpeed, movement.y * activeSpeed);   
+        playerRb.velocity = new Vector2(movement.x * activeSpeed, movement.y * activeSpeed);
+
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        healthBar.SetHealth(health);
     }
 }
