@@ -67,6 +67,11 @@ public class Enemy : MonoBehaviour
             Destroy(other.gameObject);
         }
         
+        else if(other.gameObject.tag == "ExplosionRadius")
+        {
+            health -= 3;
+        }
+
         else if(other.collider.tag == "Player" )
         {
             playerScript.TakeDamage(damageDealt);
@@ -74,7 +79,7 @@ public class Enemy : MonoBehaviour
             {
                 Destroy(gameObject);
             }   
-        }   
+        }  
         
     }
 }
