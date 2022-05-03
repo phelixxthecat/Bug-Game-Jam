@@ -6,7 +6,7 @@ public class Shooter : MonoBehaviour
 {
     public Transform firePoint;
     public float bulletSpeed = 20f;
-    private int bulletCount = 10;
+    public int bulletCount = 10;
     public float time = .05f;
     private int index;
     private bool basic = true;
@@ -26,13 +26,7 @@ public class Shooter : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && Time.time > NextShot)
         {  
             Shoot();
-        }
-        else if(Input.GetKeyUp(KeyCode.Space) && Time.time > NextShot && fullAuto && currentBullet == bulletType[3])
-        {
-            InvokeRepeating("Shoot", .0f, 0.1f);
-        }
-
-        
+        }  
     }
 
     private void Shoot()
@@ -60,7 +54,7 @@ public class Shooter : MonoBehaviour
 
         else if(fullAuto && currentBullet == bulletType[3] )
         {
-            BulletSpawning(.05f, bulletSpeed);
+            InvokeRepeating("FullAuto", 0, 0.1f);
         }
         
         else if(bouncy && currentBullet == bulletType[4])
@@ -91,6 +85,19 @@ public class Shooter : MonoBehaviour
             index = 4;
             Equip(index);
         }
+    }
+
+    private void FullAuto()
+    {
+        if(bulletCount > 0 && currentBullet == bulletType[3])
+        {
+            BulletSpawning(.05f, bulletSpeed);
+        }
+        else
+        {
+            return;
+        }
+        bulletCount--;
     }
 
     private void BulletSpawning(float bulletTime, float bulletSpeed)
