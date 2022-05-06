@@ -52,7 +52,7 @@ public class Shooter : MonoBehaviour
             BulletSpawning(1.5f, bulletSpeed * 2);
         }
 
-        else if(fullAuto && currentBullet == bulletType[3] )
+        else if(fullAuto && currentBullet == bulletType[3] && bulletCount > 0)
         {
             InvokeRepeating("FullAuto", 0, 0.1f);
         }
@@ -95,7 +95,7 @@ public class Shooter : MonoBehaviour
         }
         else
         {
-            return;
+            CancelInvoke();
         }
         bulletCount--;
     }
@@ -111,11 +111,5 @@ public class Shooter : MonoBehaviour
     private void Equip(int bullet)
     {
         currentBullet = bulletType[bullet];
-    }
-
-    IEnumerator Delay()
-    {
-        yield return new WaitForSeconds(0.05f);
-         Debug.Log("Delay");
     }
 }
