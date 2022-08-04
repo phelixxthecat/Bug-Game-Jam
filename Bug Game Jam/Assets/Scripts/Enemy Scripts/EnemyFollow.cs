@@ -7,7 +7,6 @@ public class EnemyFollow : MonoBehaviour
     public GameObject player;
     private Rigidbody2D enemyRb;
     public float speed;
-    public bool teleporter = false;
     private Vector3 directionToPlayer;
 
     // Start is called before the first frame update

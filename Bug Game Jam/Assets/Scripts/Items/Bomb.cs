@@ -10,6 +10,8 @@ public class Bomb : MonoBehaviour
         if(col.tag == "Enemy" || col.tag == "Boss")
         {
             Instantiate(explosionRadius, gameObject.transform);
+            gameObject.GetComponent<SpriteRenderer>().sortingOrder--;
+            Destroy(GetComponent<Collider2D>());
         }
     }
 }

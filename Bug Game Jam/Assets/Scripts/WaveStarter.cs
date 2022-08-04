@@ -67,7 +67,6 @@ public class WaveStarter : MonoBehaviour
     {
         if(collider.name == "Player")
         {
-            Debug.Log("Player starting battle");
             InvokeRepeating("Spawning", 0f,3.0f);
         }
         else if(collider.tag == "Enemy" || collider.tag == "Boss")

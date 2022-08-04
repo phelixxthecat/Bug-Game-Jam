@@ -8,11 +8,11 @@ public class Enemy : MonoBehaviour
     public int Maxhealth;
     public int damageDealt;
     private Rigidbody2D rb = null;
-    public GameObject player;
-    public GameObject lootDrop = null;
-    public Player playerScript;
-    public GameObject GM;
-    public GameManager GMscript;
+    private GameObject player;
+    private GameObject lootDrop = null;
+    private Player playerScript;
+    private GameObject GM;
+    private GameManager GMscript;
     public bool inTrigger;
 
     void Start()
@@ -64,6 +64,12 @@ public class Enemy : MonoBehaviour
         else if(other.gameObject.tag == "Shotgun")
         {
             health -= 2;
+            Destroy(other.gameObject);
+        }
+
+        else if(other.gameObject.tag == "Full Auto")
+        {
+            health -= 1;
             Destroy(other.gameObject);
         }
         
