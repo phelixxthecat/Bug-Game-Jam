@@ -5,13 +5,27 @@ using UnityEngine;
 public class Bomb : MonoBehaviour
 {
     public GameObject explosionRadius;
-    void OnTriggerEnter2D(Collider2D col)
+    public float timeRemaining = 3;
+    public bool explode = false;
+
+    void Update()
     {
-        if(col.tag == "Enemy" || col.tag == "Boss")
+        Timer();
+    }
+
+        
+    void Timer()
+    {
+        if (timeRemaining > 0)
+        {
+            timeRemaining -= Time.deltaTime;
+        }
+        else if(!explode)
         {
             Instantiate(explosionRadius, gameObject.transform);
             gameObject.GetComponent<SpriteRenderer>().sortingOrder--;
             Destroy(GetComponent<Collider2D>());
+            explode = true;
         }
     }
 }
