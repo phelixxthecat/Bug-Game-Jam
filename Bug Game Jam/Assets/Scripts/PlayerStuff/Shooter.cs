@@ -7,6 +7,7 @@ public class Shooter : MonoBehaviour
     public Transform firePoint;
     public float bulletSpeed = 20f;
     public int bulletCount = 10;
+    public int gernadeCount = 1;
     public float time = .05f;
     private int index;
     private bool basic = true;
@@ -15,6 +16,7 @@ public class Shooter : MonoBehaviour
     public bool fullAuto = false;
     public bool bouncy = false;
     public double NextShot = 0;
+    public bool gernade = false;
     public GameObject[] bulletType = new GameObject[5];
     public GameObject currentBullet = null;
 
@@ -61,6 +63,12 @@ public class Shooter : MonoBehaviour
         {
             BulletSpawning(1f, bulletSpeed);
         }
+
+        else if(gernade && currentBullet == bulletType[5] && gernadeCount > 0)
+        {
+            BulletSpawning(1f, bulletSpeed);
+            gernadeCount--;
+        }
     }
 
     private void Change()
@@ -83,6 +91,10 @@ public class Shooter : MonoBehaviour
         }
         else if(Input.GetKeyDown(KeyCode.Alpha5) && bouncy){
             index = 4;
+            Equip(index);
+        }
+        else if(Input.GetKeyDown(KeyCode.E) && gernade){
+            index = 5;
             Equip(index);
         }
     }
