@@ -18,9 +18,6 @@ public class Player : MonoBehaviour
     public int health;
     public int maxHealth;
     public float dashCount = 0;
-    private float dashDelay = 2;
-
-
 
     void Start()
     {

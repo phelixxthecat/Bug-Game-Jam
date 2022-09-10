@@ -5,18 +5,21 @@ using UnityEngine;
 public class Shooter : MonoBehaviour
 {
     public Transform firePoint;
+    
     public float bulletSpeed = 20f;
     public int bulletCount = 10;
-    public int gernadeCount = 1;
+    public int gernadeCount = 0;
     public float time = .05f;
+
     private int index;
     private bool basic = true;
     public bool shotgun = false;
     public bool sniper = false;
     public bool fullAuto = false;
     public bool bouncy = false;
-    public double NextShot = 0;
     public bool gernade = false;
+    public double NextShot = 0;
+    
     public GameObject[] bulletType = new GameObject[5];
     public GameObject currentBullet = null;
 
@@ -66,7 +69,7 @@ public class Shooter : MonoBehaviour
 
         else if(gernade && currentBullet == bulletType[5] && gernadeCount > 0)
         {
-            BulletSpawning(1f, bulletSpeed);
+            BulletSpawning(1f, bulletSpeed / 2);
             gernadeCount--;
         }
     }
