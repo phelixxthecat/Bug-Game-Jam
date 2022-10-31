@@ -11,7 +11,7 @@ public class WaveStarter : MonoBehaviour
     private int enemyPrefabNum;
     private Vector3 roomSize;
     public GameObject[] enemyPrefabs;
-    public GameObject doorOne;
+    public GameObject[] doors;
     public GameObject room;
     private Enemy enemy;
     private BoxCollider2D collider;
@@ -32,17 +32,19 @@ public class WaveStarter : MonoBehaviour
     {   
         if(enemiesMax > 0)
         {
- 
             float RandomSpawnPosX = Random.Range(xMin,xMax);
             float RandomSpawnPosY = Random.Range(yMin,yMax);
             enemyPrefabNum = Random.Range(0, enemyPrefabs.Length);
             Instantiate(enemyPrefabs[enemyPrefabNum], new Vector2(RandomSpawnPosX, RandomSpawnPosY), Quaternion.identity); 
+            doors[0].SetActive(true);
+            doors[1].SetActive(true);
             enemiesMax--;
             enemiesAlive++;
         }
-        if(enemiesAlive <= 0 && enemiesMax <= 0)
+        else if(enemiesAlive <= 0 && enemiesMax <= 0)
         {
-            Destroy(doorOne);
+            Destroy(doors[0]);
+            Destroy(doors[1]);
         }
         else
         {
