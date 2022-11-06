@@ -6,6 +6,7 @@ public class WaveStarter : MonoBehaviour
 {   
     public int enemiesMax;
     public int enemiesAlive = 0;
+    public int bossAlive = 0;
     public int waveWaitTime;
     private int RandomSpawnPos;
     private int enemyPrefabNum;
@@ -30,21 +31,25 @@ public class WaveStarter : MonoBehaviour
 
     public void Spawning()
     {   
-        if(enemiesMax > 0)
+        if(enemiesMax > 0 || bossAlive > 0)
         {
             float RandomSpawnPosX = Random.Range(xMin,xMax);
             float RandomSpawnPosY = Random.Range(yMin,yMax);
             enemyPrefabNum = Random.Range(0, enemyPrefabs.Length);
             Instantiate(enemyPrefabs[enemyPrefabNum], new Vector2(RandomSpawnPosX, RandomSpawnPosY), Quaternion.identity); 
-            doors[0].SetActive(true);
-            doors[1].SetActive(true);
+            
+            for(int i = 0; i < doors.Length; i++)
+            {
+                doors[i].SetActive(true);
+            }
             enemiesMax--;
-            enemiesAlive++;
         }
-        else if(enemiesAlive <= 0 && enemiesMax <= 0)
+        else if(enemiesAlive <= 0 && enemiesMax <= 0 && bossAlive == 0)
         {
-            Destroy(doors[0]);
-            Destroy(doors[1]);
+            for(int i = 0; i < doors.Length; i++)
+            {
+                Destroy(doors[i]);
+            }
         }
         else
         {
@@ -71,10 +76,11 @@ public class WaveStarter : MonoBehaviour
         {
             InvokeRepeating("Spawning", 0f,3.0f);
         }
-        else if(collider.tag == "Enemy" || collider.tag == "Boss")
+        if(collider.tag == "Enemy")
         {
             enemy = collider.GetComponent<Enemy>();
             enemy.inTrigger = true;
+            enemiesAlive++;
         }
     }
 
