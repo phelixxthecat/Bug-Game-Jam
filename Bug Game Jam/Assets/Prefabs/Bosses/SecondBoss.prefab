@@ -101,12 +101,6 @@ MonoBehaviour:
   health: 60
   Maxhealth: 60
   damageDealt: 5
-  player: {fileID: 0}
-  lootDrop: {fileID: 2473540537184157025, guid: 8b61d0534938ce04c993a474e92b979f,
-    type: 3}
-  playerScript: {fileID: 0}
-  GM: {fileID: 0}
-  GMscript: {fileID: 0}
   inTrigger: 0
 --- !u!61 &4720074500843374504
 BoxCollider2D:
@@ -147,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  speed: 8
+  speed: 5
 --- !u!50 &1235765471199981330
 Rigidbody2D:
   serializedVersion: 4
