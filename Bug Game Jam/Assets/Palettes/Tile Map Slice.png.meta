@@ -129,6 +129,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -940,6 +941,42 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tile Map Slice_33: -8387594354376336392
+      Tile Map Slice_7: -6570733878727479563
+      Tile Map Slice_6: -5410605911944184173
+      Tile Map Slice_27: 7006556375409844918
+      Tile Map Slice_30: -6833732392146948054
+      Tile Map Slice_2: 7126346355026485622
+      Tile Map Slice_32: 1813621926262378560
+      Tile Map Slice_24: 8227334515961105804
+      Tile Map Slice_21: -6059333670704248892
+      Tile Map Slice_34: -802449845524394813
+      Tile Map Slice_10: 4557924186417828436
+      Newest Tile Map: -7205819431212518121
+      Tile Map Slice_14: 8464972582252873963
+      Tile Map Slice_17: -2861953531915673840
+      Tile Map Slice_19: -5975070665830858756
+      Tile Map Slice_12: 3650748706200915499
+      Tile Map Slice_9: -591469123472197144
+      Tile Map Slice_18: 4665670707446200172
+      Tile Map Slice_28: -153333125173742518
+      Tile Map Slice_31: -5938652186908872313
+      Tile Map Slice_29: 8715688101696481627
+      Tile Map Slice_8: -2825980702832129658
+      Tile Map Slice_4: -4183402650187582242
+      Tile Map Slice_3: -4243505171413723363
+      Tile Map Slice_26: 6887644572002598901
+      Tile Map Slice_5: 1184320227840291111
+      Tile Map Slice_11: -2489810473986387886
+      Tile Map Slice_20: 7910141649417533557
+      Tile Map Slice_1: 4080188276831124285
+      Tile Map Slice_15: 2557945549801491880
+      Tile Map Slice_23: 4450665391040822822
+      Tile Map Slice_25: -5395441819088371769
+      Tile Map Slice_13: 3852694703698310704
+      Tile Map Slice_16: 5883781173120016587
+      Tile Map Slice_22: -6277929461210300847
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
