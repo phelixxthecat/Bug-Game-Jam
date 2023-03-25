@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -41,6 +41,7 @@
      <Compile Include="Assets\Scripts\AudioStuff\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyShooting.cs" />
      <Compile Include="Assets\Scripts\AmmoScripts\SniperAmmo.cs" />
+     <Compile Include="Assets\EnemyPointerFollow.cs" />
      <Compile Include="Assets\Scripts\AudioStuff\SwitchMusicTrigger.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyFollow.cs" />
@@ -62,7 +63,6 @@
      <Compile Include="Assets\Scripts\Wall.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\WaveStarter.cs" />
-     <Compile Include="Assets\EnemyPointerFollow.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -306,17 +306,14 @@
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>C:\Users\Phelixx\Documents\Visual Studio 2019\2020.3.22f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\Phelixx\Desktop\Folder Games (By Me)\Bug-Game-Jam\Bug Game Jam\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-        <HintPath>C:\Users\Phelixx\Desktop\Folder Games (By Me)\Bug-Game-Jam\Bug Game Jam\Library\PackageCache\com.unity.analytics@3.6.11\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+        <HintPath>C:\Users\Phelixx\Desktop\Folder Games (By Me)\Bug-Game-Jam\Bug Game Jam\Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-        <HintPath>C:\Users\Phelixx\Desktop\Folder Games (By Me)\Bug-Game-Jam\Bug Game Jam\Library\PackageCache\com.unity.analytics@3.6.11\Unity.Analytics.Editor.dll</HintPath>
+        <HintPath>C:\Users\Phelixx\Desktop\Folder Games (By Me)\Bug-Game-Jam\Bug Game Jam\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-        <HintPath>C:\Users\Phelixx\Desktop\Folder Games (By Me)\Bug-Game-Jam\Bug Game Jam\Library\PackageCache\com.unity.analytics@3.6.11\Unity.Analytics.Tracker.dll</HintPath>
+        <HintPath>C:\Users\Phelixx\Desktop\Folder Games (By Me)\Bug-Game-Jam\Bug Game Jam\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Users\Phelixx\Documents\Visual Studio 2019\2020.3.22f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
