@@ -41,7 +41,7 @@
      <Compile Include="Assets\Scripts\AudioStuff\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyShooting.cs" />
      <Compile Include="Assets\Scripts\AmmoScripts\SniperAmmo.cs" />
-     <Compile Include="Assets\EnemyPointerFollow.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyPointerFollow.cs" />
      <Compile Include="Assets\Scripts\AudioStuff\SwitchMusicTrigger.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyFollow.cs" />
@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\Wall.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\WaveStarter.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\SpawnPointer.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
