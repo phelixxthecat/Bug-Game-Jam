@@ -19,9 +19,14 @@ public class EnemyBullet : MonoBehaviour
         rigidBody = GetComponent<Rigidbody2D>();
         moveDirection = (player.transform.position - transform.position).normalized * speed;
         rigidBody.velocity = new Vector2(moveDirection.x, moveDirection.y);
-
-
+        transform.LookAt(player.transform, Vector3.forward);
     }
+
+    void Update()
+    {
+        Timer();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "Player") 
@@ -34,4 +39,17 @@ public class EnemyBullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void Timer()
+    {
+        if (targetTime > 0)
+        {
+            targetTime -= Time.deltaTime;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }

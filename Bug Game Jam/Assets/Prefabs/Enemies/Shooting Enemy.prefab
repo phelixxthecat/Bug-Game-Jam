@@ -132,9 +132,6 @@ MonoBehaviour:
   health: 1
   Maxhealth: 1
   damageDealt: 1
-  player: {fileID: 0}
-  lootDrop: {fileID: 0}
-  playerScript: {fileID: 0}
   inTrigger: 0
 --- !u!114 &4909045127087891709
 MonoBehaviour:
@@ -151,7 +148,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7843328657428804661, guid: eda8ec325a01a12479470d12b84932c7,
     type: 3}
   bulletSpeed: 1.5
-  targetTime: 1
+  targetTime: 3
   fireRate: 2
   nextFire: 0
   player: {fileID: 0}

@@ -14,6 +14,7 @@ public class EnemyShooting : MonoBehaviour
     
     void Start()
     {
+        player = GameObject.Find("Player");
         nextFire = Time.time;
     }
 

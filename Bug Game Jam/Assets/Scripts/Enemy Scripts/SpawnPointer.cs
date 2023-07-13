@@ -11,14 +11,11 @@ public class SpawnPointer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        position = transform.parent.position - new Vector3(0, -5, 0);
-        parent = Transform.this;
         Spawn();
     }
 
     void Spawn()
     {
-        pointer.transform.SetParent(parent);
-        Instantiate(pointer, position, Quaternion.identity);
+        Instantiate(pointer, transform, true);
     }
 }
