@@ -19,7 +19,7 @@ public class EnemyBullet : MonoBehaviour
         rigidBody = GetComponent<Rigidbody2D>();
         moveDirection = (player.transform.position - transform.position).normalized * speed;
         rigidBody.velocity = new Vector2(moveDirection.x, moveDirection.y);
-        transform.LookAt(player.transform, Vector3.forward);
+        Look();
     }
 
     void Update()
@@ -50,6 +50,15 @@ public class EnemyBullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Look()
+    {
+        Vector3 Look = transform.InverseTransformPoint(player.transform.position);
+
+        float Angle = Mathf.Atan2(Look.y, Look.x) * Mathf.Rad2Deg - 90;
+
+        transform.Rotate(0,0,Angle);
     }
 
 }

@@ -21,12 +21,16 @@ public class EnemyPointerFollow : MonoBehaviour
     void Update()
     {
         Vector2 relativePos = playerTransform.position - transform.position;
-        transform.LookAt(player.transform,Vector3.back);
+        Look();
         //transform.RotateAround(enemyAttached.transform.position, Vector3.forward, 20 * Time.deltaTime);
     }
 
-    void SpawnPointer()
+    private void Look()
     {
-        
+        Vector3 Look = transform.InverseTransformPoint(player.transform.position);
+
+        float Angle = Mathf.Atan2(Look.y, Look.x) * Mathf.Rad2Deg - 90;
+
+        transform.Rotate(0, 0, Angle);
     }
 }
