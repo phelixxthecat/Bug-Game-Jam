@@ -9,7 +9,6 @@ public class Enemy : MonoBehaviour
     public int damageDealt;
     private Rigidbody2D rb = null;
     private GameObject player;
-    private GameObject lootDrop = null;
     private Player playerScript;
     private GameObject GM;
     private GameManager GMscript;
@@ -27,11 +26,7 @@ public class Enemy : MonoBehaviour
     void Update () 
     {
         if(health <= 0)
-        {
-            if(lootDrop != null)
-            {
-                Instantiate(lootDrop, transform.position, Quaternion.identity);
-            }         
+        {   
             inTrigger = false;
             if(gameObject.tag == "Boss")
             {

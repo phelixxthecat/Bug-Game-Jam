@@ -97,6 +97,8 @@ MonoBehaviour:
   health: 3
   Maxhealth: 3
   damageDealt: 1
+  lootDrop: {fileID: 4133139586273172402, guid: 3781121a39f8afd42bb3f7172d03c21d,
+    type: 3}
   inTrigger: 0
 --- !u!114 &36175470688822827
 MonoBehaviour:

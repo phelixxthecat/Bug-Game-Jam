@@ -16,10 +16,11 @@ public class SniperAmmo : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col == player)
+        if(col.tag == "Player")
         {
             Shooter shooterScript = col.GetComponent<Shooter>();
             shooterScript.sniper = true; 
+            Destroy(gameObject);
         }
         
     }
