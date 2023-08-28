@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     public Rigidbody2D playerRb;
     public GameObject player;
+    public GameObject OptionsMenu;
     public Transform firePoint;
     Vector2 movement;
     public HealthBar healthBar;
@@ -60,6 +61,10 @@ public class Player : MonoBehaviour
         else if (dash == false && targetTime < 1.5f)
         {
             activeSpeed = speed;
+        }
+        else if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            OptionsMenu.SetActive(true);
         }
 
         playerRb.velocity = new Vector2(movement.x * activeSpeed, movement.y * activeSpeed);

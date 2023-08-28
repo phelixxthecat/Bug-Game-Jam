@@ -72,6 +72,12 @@ public class Enemy : MonoBehaviour
             health -= 1;
             Destroy(other.gameObject);
         }
+
+        else if(other.gameObject.tag == "Bouncy")
+        {
+            health -= 1;
+            Destroy(other.gameObject);
+        }
         
         else if(other.gameObject.tag == "ExplosionRadius")
         {

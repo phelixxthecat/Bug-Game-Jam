@@ -61,8 +61,7 @@ public class GameManager : MonoBehaviour
     {
         if(bossesDefeated == 3)
         {
-            congratsText.gameObject.SetActive(true);
-            restartButton.gameObject.SetActive(true);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             isGameActive = false;
         }
         

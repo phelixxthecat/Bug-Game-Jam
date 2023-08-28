@@ -6,8 +6,19 @@ public class Bullet : MonoBehaviour
 {
     public float targetTime = 1.0f;
 
+    void Start()
+    {
+
+        Vector3 Look = Input.mousePosition - transform.position;
+
+        float Angle = Mathf.Atan2(Look.y, Look.x) * Mathf.Rad2Deg - 90;
+
+        transform.Rotate(0,0,Angle);
+    }
+
     void Update()
     {
+        
         if (targetTime > 0)
         {
             targetTime -= Time.deltaTime;
