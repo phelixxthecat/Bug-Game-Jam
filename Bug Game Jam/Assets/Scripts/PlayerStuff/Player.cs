@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public Rigidbody2D playerRb;
     public GameObject player;
     public GameObject OptionsMenu;
+    public GameObject DashGUI;
     public Transform firePoint;
     Vector2 movement;
     public HealthBar healthBar;
@@ -46,7 +47,7 @@ public class Player : MonoBehaviour
         else if(!dash && targetTime <= 0)
         {
             dash = true;
-
+            DashGUI.SetActive(true);
         }
     }
 
@@ -57,6 +58,7 @@ public class Player : MonoBehaviour
             activeSpeed = dashSpeed;
             targetTime = 2.0f;
             dash = false;
+            DashGUI.SetActive(false);
         }
         else if (dash == false && targetTime < 1.5f)
         {

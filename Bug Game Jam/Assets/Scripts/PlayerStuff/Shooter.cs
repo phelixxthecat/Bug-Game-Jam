@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
+    public GameObject ammoImage;
+    private AmmoChange ammoScript;
     public Transform firePoint;
+
     
     public float bulletSpeed = 20f;
     public int bulletCount = 10;
     public int gernadeCount = 0;
     public float time = .05f;
+    public double NextShot = 0;
 
     private int index;
     private bool basic = true;
@@ -17,11 +21,16 @@ public class Shooter : MonoBehaviour
     public bool sniper = false;
     public bool fullAuto = false;
     public bool bouncy = false;
-    public bool gernade = false;
-    public double NextShot = 0;
-    
+    //public bool gernade = false;
+
     public GameObject[] bulletType = new GameObject[5];
     public GameObject currentBullet = null;
+
+    void Start()
+    {
+        ammoImage = GameObject.Find("Current Ammo");
+        ammoScript = ammoImage.GetComponent<AmmoChange>();
+    }
 
     // Update is called once per frame
     private void Update()
@@ -31,6 +40,7 @@ public class Shooter : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && Time.time > NextShot)
         {  
             Shoot();
+            bulletCount = 10;
         }  
     }
 
@@ -67,11 +77,11 @@ public class Shooter : MonoBehaviour
             BulletSpawning(1f, bulletSpeed);
         }
 
-        else if(gernade && currentBullet == bulletType[5] && gernadeCount > 0)
-        {
-            BulletSpawning(1f, bulletSpeed / 2);
-            gernadeCount--;
-        }
+        // else if(gernade && currentBullet == bulletType[5] && gernadeCount > 0)
+        // {
+        //     BulletSpawning(1f, bulletSpeed / 2);
+        //     gernadeCount--;
+        // }
     }
 
     private void Change()
@@ -96,10 +106,10 @@ public class Shooter : MonoBehaviour
             index = 4;
             Equip(index);
         }
-        else if(Input.GetKeyDown(KeyCode.E) && gernade){
-            index = 5;
-            Equip(index);
-        }
+        // else if(Input.GetKeyDown(KeyCode.E) && gernade){
+        //     index = 5;
+        //     Equip(index);
+        // }
     }
 
     private void FullAuto()
@@ -126,5 +136,6 @@ public class Shooter : MonoBehaviour
     private void Equip(int bullet)
     {
         currentBullet = bulletType[bullet];
+        ammoScript.changeImage(bullet);
     }
 }

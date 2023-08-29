@@ -132,7 +132,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &8073167940423102030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,11 +148,6 @@ MonoBehaviour:
   health: 10
   Maxhealth: 10
   damageDealt: 1
-  player: {fileID: 0}
-  lootDrop: {fileID: 0}
-  playerScript: {fileID: 0}
-  GM: {fileID: 0}
-  GMscript: {fileID: 0}
   inTrigger: 0
 --- !u!114 &8073167940423102031
 MonoBehaviour:
@@ -168,3 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   speed: 0.5
+  targetTime: 2
+  ableToDash: 0
+  dashSpeed: 0
+  dash: 0

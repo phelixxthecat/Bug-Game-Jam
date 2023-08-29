@@ -11,10 +11,8 @@ public class GameManager : MonoBehaviour
     public int bossesDefeated = 0;
     public GameObject player;
     public TextMeshProUGUI healthText;
-    public TextMeshProUGUI gameOverText;
-    public TextMeshProUGUI congratsText;
+    public Image gameOverImage;
     public Button restartButton;
-    public Button startButton;
     public Player playerScript;
     public bool isGameActive = false;
 
@@ -37,7 +35,7 @@ public class GameManager : MonoBehaviour
     {
         if(health <= 0)
         {
-            gameOverText.gameObject.SetActive(true);
+            gameOverImage.gameObject.SetActive(true);
             restartButton.gameObject.SetActive(true);
             isGameActive = false;
         }
@@ -53,8 +51,6 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         isGameActive = true;
-        startButton.gameObject.SetActive(false);
-        player.gameObject.SetActive(true);
     }
 
     public void Win()
