@@ -62,6 +62,7 @@ public class Player : MonoBehaviour
         }
         else if (dash == false && targetTime < 1.5f)
         {
+            GetComponent<BoxCollider2D>().enabled = true;
             activeSpeed = speed;
         }
         else if(Input.GetKeyDown(KeyCode.Escape))

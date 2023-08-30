@@ -57,8 +57,9 @@ GameObject:
   - component: {fileID: 1421555531893090130}
   - component: {fileID: 583602758958713874}
   - component: {fileID: 4710508714483837433}
-  - component: {fileID: 3213245829934152466}
   - component: {fileID: 8388419039113770745}
+  - component: {fileID: 3248241127392204620}
+  - component: {fileID: 1603681330121061655}
   m_Layer: 0
   m_Name: ThirdBoss
   m_TagString: Boss
@@ -153,34 +154,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!68 &3213245829934152466
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6945199843376363249}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.575367, y: -0.84926826}
-  - {x: -0.99526024, y: 0.9264082}
-  - {x: -0.0077266693, y: 1.0456614}
-  - {x: 0.99788284, y: 0.9211036}
-  - {x: 0.9923687, y: -0.19192907}
-  - {x: 0.587883, y: -0.8702937}
-  - {x: -0.16340446, y: -0.9273231}
-  - {x: -0.5817642, y: -0.8492682}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &8388419039113770745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,6 +172,51 @@ MonoBehaviour:
   ableToDash: 0
   dashSpeed: 0
   dash: 0
+--- !u!68 &3248241127392204620
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6945199843376363249}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.875509, y: -0.81215566}
+  - {x: -0.79156387, y: -0.593974}
+  - {x: -0.57217467, y: -0.023759648}
+  - {x: -0.94007355, y: 0.7418366}
+  - {x: -0.9107119, y: 1.0196408}
+  - {x: 0.9861208, y: 0.9830899}
+  - {x: 0.9865912, y: 0.032446712}
+  - {x: 0.6550907, y: -0.9402617}
+  - {x: -0.86736536, y: -0.8002993}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &1603681330121061655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6945199843376363249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a5dd50649a4d444eac622f605f3d6ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  Maxhealth: 100
+  damageDealt: 5
+  inTrigger: 0
 --- !u!1001 &2626557447233382931
 PrefabInstance:
   m_ObjectHideFlags: 0

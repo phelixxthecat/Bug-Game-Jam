@@ -148,7 +148,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7843328657428804661, guid: eda8ec325a01a12479470d12b84932c7,
     type: 3}
   bulletSpeed: 1.5
-  targetTime: 3
+  targetTime: 4
   fireRate: 2
   nextFire: 0
   player: {fileID: 0}

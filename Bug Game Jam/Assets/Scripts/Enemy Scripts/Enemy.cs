@@ -79,7 +79,7 @@ public class Enemy : MonoBehaviour
             health -= 3;
         }
 
-        else if(other.collider.tag == "Player" )
+        else if(other.collider.tag == "Player" && playerScript.activeSpeed < 10)
         {
             playerScript.TakeDamage(damageDealt);
             if(gameObject.tag != "Boss")

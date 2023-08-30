@@ -21,11 +21,15 @@ public class WaveStarter : MonoBehaviour
     private float yMin;
     private float yMax;
 
+    private GameObject player;
+    private Vector3 playerPos;
+    private Vector2 randomPosition;
     
     
     private void Start()
     {
         room = this.gameObject;
+        player = GameObject.Find("Player");
         roomDimensions(room, out yMax, out yMin, out xMax, out xMin);
     }
 
@@ -33,11 +37,22 @@ public class WaveStarter : MonoBehaviour
     {   
         if(enemiesMax > 0 || bossAlive > 0)
         {
-            float RandomSpawnPosX = Random.Range(xMin,xMax);
-            float RandomSpawnPosY = Random.Range(yMin,yMax);
-            enemyPrefabNum = Random.Range(0, enemyPrefabs.Length);
-            Instantiate(enemyPrefabs[enemyPrefabNum], new Vector2(RandomSpawnPosX, RandomSpawnPosY), Quaternion.identity); 
             
+            playerPos = player.transform.position;
+            if((Vector2) playerPos != RandomSpawning())
+            {
+                enemyPrefabNum = Random.Range(0, enemyPrefabs.Length);
+                Instantiate(enemyPrefabs[enemyPrefabNum], randomPosition, Quaternion.identity); 
+            }
+            else
+            {
+                while((Vector2) playerPos == randomPosition)
+                {
+                    RandomSpawning();
+                }
+                Instantiate(enemyPrefabs[enemyPrefabNum], randomPosition, Quaternion.identity); 
+            }
+             
             for(int i = 0; i < doors.Length; i++)
             {
                 doors[i].SetActive(true);
@@ -96,4 +111,11 @@ public class WaveStarter : MonoBehaviour
         }
     }
 
+    private Vector2 RandomSpawning()
+    {
+        float RandomSpawnPosX = Random.Range(xMin,xMax);
+        float RandomSpawnPosY = Random.Range(yMin,yMax);
+        randomPosition = new Vector2(RandomSpawnPosX, RandomSpawnPosY);
+        return randomPosition;
+    }
 }

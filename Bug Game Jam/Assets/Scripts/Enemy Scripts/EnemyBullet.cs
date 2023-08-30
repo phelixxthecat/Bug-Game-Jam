@@ -29,12 +29,12 @@ public class EnemyBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player") 
+        if(other.gameObject.tag == "Player" && playerScript.activeSpeed < 10) 
         {
             playerScript.TakeDamage(damageDealt);
             Destroy(gameObject);
         }
-        else if(targetTime <= 0.0f || other.gameObject.tag == "Collidables")
+        else if(targetTime <= 0.0f || other.tag == "Collidables" || other.tag == "Enemy")
         {
             Destroy(gameObject);
         }
