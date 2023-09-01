@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8914136227300666621}
   - component: {fileID: -1751637532706119715}
   - component: {fileID: -3335920577058560271}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stinger
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}

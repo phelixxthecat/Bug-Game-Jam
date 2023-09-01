@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5076711827413625216}
   - component: {fileID: 2043567324928074619}
   - component: {fileID: 4056689489434480778}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bouncy Ammo Pack
   m_TagString: Interactable
   m_Icon: {fileID: 0}

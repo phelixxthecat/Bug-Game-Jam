@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2473540537184157027}
   - component: {fileID: 190342121962919144}
   - component: {fileID: -3807416184326954967}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sniper Ammo Pack
   m_TagString: Interactable
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 36175470688822825}
   - component: {fileID: 36175470688822824}
   - component: {fileID: 36175470688822827}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Default Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -97,8 +97,6 @@ MonoBehaviour:
   health: 3
   Maxhealth: 3
   damageDealt: 1
-  lootDrop: {fileID: 4133139586273172402, guid: 3781121a39f8afd42bb3f7172d03c21d,
-    type: 3}
   inTrigger: 0
 --- !u!114 &36175470688822827
 MonoBehaviour:
@@ -128,7 +126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3483130568247882085}
   - component: {fileID: 723101775417021353}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MissingTextureEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

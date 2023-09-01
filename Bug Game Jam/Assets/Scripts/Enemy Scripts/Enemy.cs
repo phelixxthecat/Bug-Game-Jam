@@ -78,7 +78,12 @@ public class Enemy : MonoBehaviour
             health -= 3;
         }
 
-        else if(other.collider.tag == "Player" && playerScript.activeSpeed < 10)
+        else if(other.collider.tag == "Enemy" || other.collider.tag == "Boss")
+        {
+            Physics2D.IgnoreCollision(other.collider.GetComponent<Collider2D>(),GetComponent<Collider2D>());
+        }  
+        
+        else if(other.collider.tag == "Player" && playerScript.activeSpeed < 9)
         {
             playerScript.TakeDamage(damageDealt);
             if(gameObject.tag != "Boss")
@@ -86,7 +91,18 @@ public class Enemy : MonoBehaviour
                 Destroy(gameObject);
             }   
         }  
-        
+
+        void OnCollisionStay2D(Collision2D other)
+        {
+            if(other.collider.tag == "Player" && playerScript.activeSpeed < 9)
+        {
+            playerScript.TakeDamage(damageDealt);
+            if(gameObject.tag != "Boss")
+            {
+                Destroy(gameObject);
+            }   
+        }  
+        }
     }
 }
 

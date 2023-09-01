@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1472024160330414489}
   - component: {fileID: 7243996325992328503}
   - component: {fileID: 5504587822416463057}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gltich Door 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

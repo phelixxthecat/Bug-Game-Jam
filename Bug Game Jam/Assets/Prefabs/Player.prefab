@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5284936412291871265
 Transform:
   m_ObjectHideFlags: 0
@@ -96,6 +96,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRb: {fileID: 5284936412291871276}
   player: {fileID: 5284936412291871264}
+  OptionsMenu: {fileID: 0}
+  DashGUI: {fileID: 0}
   firePoint: {fileID: 5284936413943293571}
   healthBar: {fileID: 0}
   targetTime: 3
@@ -118,17 +120,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8e9942efe212c4a86581ff362303d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammoImage: {fileID: 0}
   firePoint: {fileID: 5284936413943293571}
   bulletSpeed: 1
   bulletCount: 10
   gernadeCount: 0
   time: 0.05
+  NextShot: 0
   shotgun: 0
   sniper: 0
   fullAuto: 0
   bouncy: 0
-  gernade: 0
-  NextShot: 0
   bulletType:
   - {fileID: 7181803471216563266, guid: 26a8150a86fa2dc43a0d25f73450d0e0, type: 3}
   - {fileID: 2046371493793173965, guid: 49a24851c262bfb4fb95fcd3299dfee3, type: 3}

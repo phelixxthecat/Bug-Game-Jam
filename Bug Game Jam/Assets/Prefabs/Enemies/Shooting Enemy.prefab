@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2648133132064493626}
   - component: {fileID: 7903745793117144407}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Error Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 4909045127087891709}
   - component: {fileID: 8219365008916883597}
   - component: {fileID: -6570897827024232399}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shooting Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}

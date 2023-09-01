@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour
     public Transform firePoint;
     Vector2 movement;
     public HealthBar healthBar;
+    private Collision2D other;
     public float targetTime = 3.0f;
     public float speed = 5;
     public float activeSpeed;
@@ -57,19 +59,20 @@ public class Player : MonoBehaviour
         {
             activeSpeed = dashSpeed;
             targetTime = 2.0f;
+            
             dash = false;
             DashGUI.SetActive(false);
         }
         else if (dash == false && targetTime < 1.5f)
         {
-            GetComponent<BoxCollider2D>().enabled = true;
             activeSpeed = speed;
+            Physics2D.IgnoreCollision(other.collider.GetComponent<Collider2D>(),GetComponent<Collider2D>(), false);
         }
         else if(Input.GetKeyDown(KeyCode.Escape))
         {
             OptionsMenu.SetActive(true);
         }
-
+        
         playerRb.velocity = new Vector2(movement.x * activeSpeed, movement.y * activeSpeed);
 
     }
@@ -78,5 +81,22 @@ public class Player : MonoBehaviour
     {
         health -= damage;
         healthBar.SetHealth(health);
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        other = col;
+        if(activeSpeed == 10 && (col.collider.tag == "Enemy" || col.collider.tag == "Boss" || col.collider.tag == "EnemyBullet"))
+        {
+            Physics2D.IgnoreCollision(col.collider.GetComponent<Collider2D>(),GetComponent<Collider2D>());
+        }
+    }
+
+    void OnCollisionStay2D(Collision2D col)
+    {
+        if(activeSpeed == 10 && (col.collider.tag == "Enemy" || col.collider.tag == "Boss" || col.collider.tag == "EnemyBullet"))
+        {
+            Physics2D.IgnoreCollision(col.collider.GetComponent<Collider2D>(),GetComponent<Collider2D>());
+        }
     }
 }

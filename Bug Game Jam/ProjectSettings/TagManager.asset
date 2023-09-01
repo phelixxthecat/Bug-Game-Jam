@@ -21,11 +21,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy Layer
   - Water
   - UI
-  - 
-  - 
+  - Player Layer
+  - Wall Layer
   - 
   - 
   - 

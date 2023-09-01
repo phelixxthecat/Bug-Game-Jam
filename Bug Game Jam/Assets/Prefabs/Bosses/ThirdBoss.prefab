@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 851944076570713555}
   - component: {fileID: 1522606217739962339}
   - component: {fileID: 3155116323531123067}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 2918213297195119803}
   - component: {fileID: 8576679402186230853}
   - component: {fileID: 5444693521339632911}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2044752349919623567}
   - component: {fileID: 6736511080263515558}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 4303185972126971675}
   - component: {fileID: 8486111762487312882}
   - component: {fileID: 4865871715535225167}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 2329221937203330}
   - component: {fileID: 4279011154545107078}
   - component: {fileID: 1360447630390112943}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 3248241127392204620}
   - component: {fileID: 1603681330121061655}
   - component: {fileID: 8255749410621705765}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ThirdBoss
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -606,7 +606,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2946048412497478458}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -644,6 +644,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pointer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2473411696190333881, guid: 6c79005cb4cb05e4aa4a1bc5f1ffa3a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4332542452801009527, guid: 6c79005cb4cb05e4aa4a1bc5f1ffa3a0,
         type: 3}

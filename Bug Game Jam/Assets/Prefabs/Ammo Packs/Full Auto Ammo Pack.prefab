@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1061504965670439433}
   - component: {fileID: 5262158097237072475}
   - component: {fileID: 6238850210023834774}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Full Auto Ammo Pack
   m_TagString: Interactable
   m_Icon: {fileID: 0}

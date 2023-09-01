@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8073167940423102018}
   - component: {fileID: 8073167940423102030}
   - component: {fileID: 8073167940423102031}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tanky Clippy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
