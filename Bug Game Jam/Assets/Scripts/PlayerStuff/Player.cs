@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     Vector2 movement;
     public HealthBar healthBar;
     private Collision2D other;
-    public float targetTime = 3.0f;
+    private float targetTime = 0f;
     public float speed = 5;
     public float activeSpeed;
     public float dashSpeed = 10;
@@ -51,6 +51,13 @@ public class Player : MonoBehaviour
             dash = true;
             DashGUI.SetActive(true);
         }
+        else if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            OptionsMenu.SetActive(true);
+        }
+
+        playerRb.velocity = new Vector2(movement.x * activeSpeed, movement.y * activeSpeed);
+
     }
 
     void FixedUpdate()
@@ -59,22 +66,16 @@ public class Player : MonoBehaviour
         {
             activeSpeed = dashSpeed;
             targetTime = 2.0f;
-            
             dash = false;
             DashGUI.SetActive(false);
+
         }
         else if (dash == false && targetTime < 1.5f)
         {
             activeSpeed = speed;
             Physics2D.IgnoreCollision(other.collider.GetComponent<Collider2D>(),GetComponent<Collider2D>(), false);
         }
-        else if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            OptionsMenu.SetActive(true);
-        }
         
-        playerRb.velocity = new Vector2(movement.x * activeSpeed, movement.y * activeSpeed);
-
     }
 
     public void TakeDamage(int damage)

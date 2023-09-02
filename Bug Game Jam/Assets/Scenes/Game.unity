@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 11988207}
   m_Layer: 7
   m_Name: Wall (39)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -271,6 +271,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -355,6 +360,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
       objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
@@ -530,7 +540,7 @@ GameObject:
   - component: {fileID: 51649138}
   m_Layer: 7
   m_Name: Wall (25)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -711,7 +721,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &59112707
 GameObject:
@@ -727,7 +737,7 @@ GameObject:
   - component: {fileID: 59112709}
   m_Layer: 7
   m_Name: Wall (18)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -861,6 +871,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -938,7 +953,7 @@ GameObject:
   - component: {fileID: 80160201}
   m_Layer: 7
   m_Name: Wall (7)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1165,7 +1180,7 @@ GameObject:
   - component: {fileID: 86394573}
   m_Layer: 7
   m_Name: Wall (16)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1308,7 +1323,7 @@ GameObject:
   - component: {fileID: 104443949}
   m_Layer: 7
   m_Name: Wall (19)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1684,7 +1699,7 @@ GameObject:
   - component: {fileID: 215578088}
   m_Layer: 7
   m_Name: Wall (23)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1815,7 +1830,7 @@ GameObject:
   - component: {fileID: 218031531}
   m_Layer: 7
   m_Name: Wall (17)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1946,7 +1961,7 @@ GameObject:
   - component: {fileID: 221884512}
   m_Layer: 7
   m_Name: Wall (9)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2152,7 +2167,7 @@ GameObject:
   - component: {fileID: 227791222}
   m_Layer: 7
   m_Name: Wall (28)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2283,7 +2298,7 @@ GameObject:
   - component: {fileID: 252787742}
   m_Layer: 7
   m_Name: Wall (1)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2414,7 +2429,7 @@ GameObject:
   - component: {fileID: 253486516}
   m_Layer: 7
   m_Name: Wall (12)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2630,7 +2645,7 @@ RectTransform:
   - {fileID: 1024077517}
   - {fileID: 417147116}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2664,7 +2679,7 @@ GameObject:
   - component: {fileID: 276450588}
   m_Layer: 7
   m_Name: Wall (44)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2798,6 +2813,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -2879,7 +2899,7 @@ GameObject:
   - component: {fileID: 290496482}
   m_Layer: 7
   m_Name: Wall (31)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3181,6 +3201,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -3269,7 +3294,7 @@ GameObject:
   - component: {fileID: 328048772}
   m_Layer: 7
   m_Name: Wall (45)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3400,7 +3425,7 @@ GameObject:
   - component: {fileID: 334463664}
   m_Layer: 7
   m_Name: Wall (46)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3633,7 +3658,7 @@ GameObject:
   - component: {fileID: 348515512}
   m_Layer: 7
   m_Name: Wall (30)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3773,6 +3798,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -3868,6 +3898,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
       objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
@@ -4132,6 +4167,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -4306,6 +4346,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5395997044364704868, guid: 11bc3c4bc54252746bb3ce32869e0d4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11bc3c4bc54252746bb3ce32869e0d4a, type: 3}
 --- !u!4 &477469787 stripped
@@ -4334,7 +4379,7 @@ GameObject:
   - component: {fileID: 505928479}
   m_Layer: 7
   m_Name: Wall (16)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4568,7 +4613,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &569343397
 GameObject:
@@ -4621,7 +4666,7 @@ GameObject:
   - component: {fileID: 602850011}
   m_Layer: 7
   m_Name: Wall (35)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4755,6 +4800,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -4861,7 +4911,7 @@ Transform:
   - {fileID: 1381015422}
   - {fileID: 1766518241}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &620821369 stripped
 Transform:
@@ -4889,7 +4939,7 @@ GameObject:
   - component: {fileID: 635648063}
   m_Layer: 7
   m_Name: Wall (5)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5020,7 +5070,7 @@ GameObject:
   - component: {fileID: 637060642}
   m_Layer: 7
   m_Name: Wall (15)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5151,7 +5201,7 @@ GameObject:
   - component: {fileID: 640009917}
   m_Layer: 7
   m_Name: Wall (18)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5282,7 +5332,7 @@ GameObject:
   - component: {fileID: 643277542}
   m_Layer: 7
   m_Name: Wall (36)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5482,6 +5532,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5395997044364704868, guid: 11bc3c4bc54252746bb3ce32869e0d4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11bc3c4bc54252746bb3ce32869e0d4a, type: 3}
 --- !u!4 &649315107 stripped
@@ -5542,6 +5597,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
       objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
@@ -5715,7 +5775,7 @@ GameObject:
   - component: {fileID: 705597832}
   m_Layer: 7
   m_Name: Wall (47)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5909,6 +5969,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5395997044364704868, guid: 11bc3c4bc54252746bb3ce32869e0d4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11bc3c4bc54252746bb3ce32869e0d4a, type: 3}
 --- !u!4 &715520708 stripped
@@ -5949,9 +6014,8 @@ Transform:
   m_Children:
   - {fileID: 1858102799}
   - {fileID: 1344655724}
-  - {fileID: 1626845982}
   m_Father: {fileID: 1615452807}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &715946164
 MonoBehaviour:
@@ -6177,6 +6241,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5395997044364704868, guid: 11bc3c4bc54252746bb3ce32869e0d4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11bc3c4bc54252746bb3ce32869e0d4a, type: 3}
 --- !u!4 &720151726 stripped
@@ -6199,7 +6268,7 @@ GameObject:
   - component: {fileID: 728593456}
   m_Layer: 7
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6333,6 +6402,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -6410,7 +6484,7 @@ GameObject:
   - component: {fileID: 736759932}
   m_Layer: 7
   m_Name: Wall (32)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6541,7 +6615,7 @@ GameObject:
   - component: {fileID: 758536122}
   m_Layer: 7
   m_Name: Wall (26)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6672,7 +6746,7 @@ GameObject:
   - component: {fileID: 778835547}
   m_Layer: 7
   m_Name: Wall (6)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6803,7 +6877,7 @@ GameObject:
   - component: {fileID: 793616239}
   m_Layer: 7
   m_Name: Wall (43)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6934,7 +7008,7 @@ GameObject:
   - component: {fileID: 797596899}
   m_Layer: 7
   m_Name: Wall (41)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7152,7 +7226,7 @@ GameObject:
   - component: {fileID: 867269674}
   m_Layer: 7
   m_Name: Wall (9)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7283,7 +7357,7 @@ GameObject:
   - component: {fileID: 879067594}
   m_Layer: 7
   m_Name: Wall (34)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7540,7 +7614,7 @@ Transform:
   - {fileID: 218031530}
   - {fileID: 640009916}
   m_Father: {fileID: 1615452807}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &964419709
 GameObject:
@@ -7721,7 +7795,7 @@ GameObject:
   - component: {fileID: 968218453}
   m_Layer: 7
   m_Name: Wall (11)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7852,7 +7926,7 @@ GameObject:
   - component: {fileID: 978435675}
   m_Layer: 7
   m_Name: Wall (6)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7986,6 +8060,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -8067,7 +8146,7 @@ GameObject:
   - component: {fileID: 988533824}
   m_Layer: 7
   m_Name: Wall (38)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8264,7 +8343,7 @@ Transform:
   - {fileID: 95293176}
   - {fileID: 506664190}
   m_Father: {fileID: 1615452807}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1024077516
 GameObject:
@@ -8436,7 +8515,7 @@ GameObject:
   - component: {fileID: 1077403139}
   m_Layer: 7
   m_Name: Wall (14)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8567,7 +8646,7 @@ GameObject:
   - component: {fileID: 1088451070}
   m_Layer: 7
   m_Name: Wall (4)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8944,7 +9023,7 @@ GameObject:
   - component: {fileID: 1153048899}
   m_Layer: 7
   m_Name: Wall (2)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9138,6 +9217,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5395997044364704868, guid: 11bc3c4bc54252746bb3ce32869e0d4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11bc3c4bc54252746bb3ce32869e0d4a, type: 3}
 --- !u!4 &1164590040 stripped
@@ -9222,6 +9306,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5395997044364704868, guid: 11bc3c4bc54252746bb3ce32869e0d4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11bc3c4bc54252746bb3ce32869e0d4a, type: 3}
@@ -9389,6 +9478,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5395997044364704868, guid: 11bc3c4bc54252746bb3ce32869e0d4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11bc3c4bc54252746bb3ce32869e0d4a, type: 3}
 --- !u!4 &1173903584 stripped
@@ -9411,7 +9505,7 @@ GameObject:
   - component: {fileID: 1178059640}
   m_Layer: 7
   m_Name: Wall (37)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9545,6 +9639,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -9622,7 +9721,7 @@ GameObject:
   - component: {fileID: 1222715681}
   m_Layer: 7
   m_Name: Wall (20)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9753,7 +9852,7 @@ GameObject:
   - component: {fileID: 1226322375}
   m_Layer: 7
   m_Name: Wall (27)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9970,7 +10069,7 @@ GameObject:
   - component: {fileID: 1262475612}
   m_Layer: 7
   m_Name: Wall (14)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10104,6 +10203,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -10184,6 +10288,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -10263,6 +10372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
       objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
@@ -10402,7 +10516,7 @@ GameObject:
   - component: {fileID: 1308214596}
   m_Layer: 7
   m_Name: Wall (48)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10596,12 +10710,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310354755}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1310354759
 MonoBehaviour:
@@ -10630,7 +10744,7 @@ GameObject:
   - component: {fileID: 1313549201}
   m_Layer: 7
   m_Name: Wall (7)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10848,7 +10962,7 @@ GameObject:
   - component: {fileID: 1332397956}
   m_Layer: 7
   m_Name: Wall (8)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10982,6 +11096,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -11075,7 +11194,7 @@ GameObject:
   - component: {fileID: 1349858675}
   m_Layer: 7
   m_Name: Wall (12)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11209,6 +11328,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -11286,7 +11410,7 @@ GameObject:
   - component: {fileID: 1362266227}
   m_Layer: 7
   m_Name: Wall (13)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11537,7 +11661,7 @@ GameObject:
   - component: {fileID: 1370396788}
   m_Layer: 7
   m_Name: Wall (8)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11668,7 +11792,7 @@ GameObject:
   - component: {fileID: 1373241518}
   m_Layer: 7
   m_Name: Wall (10)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81056,7 +81180,7 @@ GameObject:
   - component: {fileID: 1386090814}
   m_Layer: 7
   m_Name: Wall (4)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81217,7 +81341,7 @@ Transform:
   - {fileID: 161954777}
   - {fileID: 1305896364}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1397308083 stripped
 GameObject:
@@ -81239,7 +81363,7 @@ GameObject:
   - component: {fileID: 1410170167}
   m_Layer: 7
   m_Name: Wall (1)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81454,7 +81578,7 @@ GameObject:
   - component: {fileID: 1419732214}
   m_Layer: 7
   m_Name: Wall (17)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81585,7 +81709,7 @@ GameObject:
   - component: {fileID: 1428376042}
   m_Layer: 7
   m_Name: Wall (5)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81716,7 +81840,7 @@ GameObject:
   - component: {fileID: 1435813770}
   m_Layer: 7
   m_Name: Wall (10)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81847,7 +81971,7 @@ GameObject:
   - component: {fileID: 1440817695}
   m_Layer: 7
   m_Name: Wall (3)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81984,7 +82108,7 @@ GameObject:
   - component: {fileID: 1458660700}
   m_Layer: 7
   m_Name: Wall (18)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82116,7 +82240,7 @@ PrefabInstance:
     - target: {fileID: 4133139586273172409, guid: 3781121a39f8afd42bb3f7172d03c21d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4133139586273172409, guid: 3781121a39f8afd42bb3f7172d03c21d,
         type: 3}
@@ -82337,7 +82461,7 @@ GameObject:
   - component: {fileID: 1484499429}
   m_Layer: 7
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82468,7 +82592,7 @@ GameObject:
   - component: {fileID: 1510858394}
   m_Layer: 7
   m_Name: Wall (2)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82749,7 +82873,7 @@ GameObject:
   - component: {fileID: 1598300344}
   m_Layer: 7
   m_Name: Wall (49)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82883,6 +83007,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -82976,7 +83105,7 @@ GameObject:
   - component: {fileID: 1607941836}
   m_Layer: 7
   m_Name: Wall (13)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83120,13 +83249,14 @@ Transform:
   m_LocalPosition: {x: 40.723534, y: 42.897644, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1626845982}
   - {fileID: 715946163}
   - {fileID: 1023332764}
   - {fileID: 1752540151}
   - {fileID: 1477123183}
   - {fileID: 947169762}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1626845979
 GameObject:
@@ -83202,13 +83332,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626845979}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.015625, y: 0.875, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 12, y: -27.75, z: 0}
+  m_LocalScale: {x: 32, y: 2, z: 1}
   m_Children:
   - {fileID: 1861811578}
   - {fileID: 34799724}
-  m_Father: {fileID: 715946163}
-  m_RootOrder: 2
+  m_Father: {fileID: 1615452807}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1632502830
 GameObject:
@@ -83224,7 +83354,7 @@ GameObject:
   - component: {fileID: 1632502834}
   m_Layer: 7
   m_Name: Wall (3)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83542,7 +83672,7 @@ GameObject:
   - component: {fileID: 1664026349}
   m_Layer: 7
   m_Name: Wall (11)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83673,7 +83803,7 @@ GameObject:
   - component: {fileID: 1674436522}
   m_Layer: 7
   m_Name: Wall (29)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83849,6 +83979,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
       propertyPath: m_RootOrder
@@ -83932,7 +84067,7 @@ GameObject:
   - component: {fileID: 1755494630}
   m_Layer: 7
   m_Name: Wall (42)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84125,6 +84260,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5395997044364704868, guid: 11bc3c4bc54252746bb3ce32869e0d4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11bc3c4bc54252746bb3ce32869e0d4a, type: 3}
@@ -84984,7 +85124,7 @@ GameObject:
   - component: {fileID: 1774882707}
   m_Layer: 7
   m_Name: Wall (40)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85115,7 +85255,7 @@ GameObject:
   - component: {fileID: 1776923293}
   m_Layer: 7
   m_Name: Wall (15)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85391,6 +85531,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5395997044364704868, guid: 11bc3c4bc54252746bb3ce32869e0d4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11bc3c4bc54252746bb3ce32869e0d4a, type: 3}
 --- !u!4 &1817051920 stripped
@@ -85440,7 +85585,7 @@ Transform:
   - {fileID: 827515102}
   - {fileID: 511210324}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1832126811
 PrefabInstance:
@@ -85458,6 +85603,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
       objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
@@ -85547,7 +85697,7 @@ GameObject:
   - component: {fileID: 1857156431}
   m_Layer: 7
   m_Name: Wall (24)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85690,7 +85840,7 @@ GameObject:
   - component: {fileID: 1858610080}
   m_Layer: 7
   m_Name: Wall (33)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85823,6 +85973,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267316477867950996, guid: e0484fb2870da4d43825e207995ea84f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
       objectReference: {fileID: 0}
     - target: {fileID: 1267316477867951002, guid: e0484fb2870da4d43825e207995ea84f,
         type: 3}
@@ -86098,7 +86253,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1925320389
 AudioSource:
@@ -86230,7 +86385,7 @@ GameObject:
   - component: {fileID: 1971604945}
   m_Layer: 7
   m_Name: Wall (50)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86554,7 +86709,7 @@ GameObject:
   - component: {fileID: 2090872899}
   m_Layer: 7
   m_Name: Wall (22)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86685,7 +86840,7 @@ GameObject:
   - component: {fileID: 2105883696}
   m_Layer: 7
   m_Name: Wall (21)
-  m_TagString: Untagged
+  m_TagString: Collidables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86964,6 +87119,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5284936412291871266, guid: 7b917b1648330b94c91d565d03b65dd2,
         type: 3}
+      propertyPath: dash
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5284936412291871266, guid: 7b917b1648330b94c91d565d03b65dd2,
+        type: 3}
       propertyPath: DashGUI
       value: 
       objectReference: {fileID: 223285033}
@@ -86972,6 +87132,11 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 417147117}
+    - target: {fileID: 5284936412291871266, guid: 7b917b1648330b94c91d565d03b65dd2,
+        type: 3}
+      propertyPath: targetTime
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5284936412291871266, guid: 7b917b1648330b94c91d565d03b65dd2,
         type: 3}
       propertyPath: OptionsMenu
@@ -87126,6 +87291,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5395997044364704868, guid: 11bc3c4bc54252746bb3ce32869e0d4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Collidables
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11bc3c4bc54252746bb3ce32869e0d4a, type: 3}
 --- !u!1001 &7885926514130917609
@@ -87163,7 +87333,7 @@ PrefabInstance:
     - target: {fileID: 7885926515881163550, guid: bdc903231e885d548b2951314d512ff4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7885926515881163550, guid: bdc903231e885d548b2951314d512ff4,
         type: 3}

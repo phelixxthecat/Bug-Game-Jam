@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\PlayerStuff\Bullet.cs" />
      <Compile Include="Assets\Scripts\AmmoScripts\ShotgunAmmo.cs" />
      <Compile Include="Assets\Scripts\AmmoScripts\FullAutoAmmo.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\Boss.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\FollowMouse.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\Player.cs" />
      <Compile Include="Assets\Scripts\Items\ExplosionDamage.cs" />
@@ -61,11 +62,11 @@
      <Compile Include="Assets\Scripts\Level Scripts\WaveSystem.cs" />
      <Compile Include="Assets\Scripts\Items\HealthPack.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\Shooter.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\BossHealthBar.cs" />
      <Compile Include="Assets\Scripts\Level Scripts\Wall.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Level Scripts\WaveStarter.cs" />
-     <Compile Include="Assets\Scripts\Enemy Scripts\BossHealthBar.cs" />
-     <Compile Include="Assets\Scripts\Enemy Scripts\Boss.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyIndicator.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
