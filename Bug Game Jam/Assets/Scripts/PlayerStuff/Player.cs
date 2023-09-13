@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -62,7 +61,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(dash && Input.GetKeyDown(KeyCode.F))
+        if(dash && Input.GetKeyDown(KeyCode.Space))
         {
             activeSpeed = dashSpeed;
             targetTime = 2.0f;

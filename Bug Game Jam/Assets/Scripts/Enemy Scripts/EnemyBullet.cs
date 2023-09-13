@@ -34,9 +34,17 @@ public class EnemyBullet : MonoBehaviour
             playerScript.TakeDamage(damageDealt);
             Destroy(gameObject);
         }
-        else if(targetTime <= 0.0f || other.tag == "Collidables" || other.tag == "Enemy")
+        else if(targetTime <= 0.0f || other.tag == "Collidables")
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.collider.tag == "Enemy" || other.collider.tag == "Boss")
+        {
+            Physics2D.IgnoreCollision(other.collider.GetComponent<Collider2D>(),GetComponent<Collider2D>());        
         }
     }
 

@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     public int damageDealt;
     private Rigidbody2D rb = null;
     private GameObject player;
+    public GameObject indicator;
+
     private Player playerScript;
     private GameObject GM;
     private GameManager GMscript;
@@ -34,6 +36,8 @@ public class Enemy : MonoBehaviour
                 ++GMscript.bossesDefeated;
             }
             Destroy(gameObject);
+            Destroy(indicator);
+
         }
         else if(health > Maxhealth)
         {
@@ -51,7 +55,7 @@ public class Enemy : MonoBehaviour
         }
         else if(other.gameObject.tag == "Sniper")
         {
-            health -= 5;
+            health -= 7;
             Destroy(other.gameObject);
         }
         
@@ -88,6 +92,7 @@ public class Enemy : MonoBehaviour
             playerScript.TakeDamage(damageDealt);
             if(gameObject.tag != "Boss")
             {
+                Destroy(indicator);
                 Destroy(gameObject);
             }   
         }  
@@ -100,6 +105,7 @@ public class Enemy : MonoBehaviour
             if(gameObject.tag != "Boss")
             {
                 Destroy(gameObject);
+                Destroy(indicator);
             }   
         }  
         }

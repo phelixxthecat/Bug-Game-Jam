@@ -30,7 +30,7 @@ public class Bullet : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.collider.tag == "Collidables")
+        if(other.collider.tag == "Collidables" && gameObject.tag != "Bouncy")
         {
             if(gameObject.name != "Bouncy")
             {

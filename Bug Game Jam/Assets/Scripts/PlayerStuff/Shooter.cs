@@ -37,15 +37,16 @@ public class Shooter : MonoBehaviour
     {
         Change();
         
-        if(Input.GetKeyDown(KeyCode.Space) && Time.time > NextShot)
+        if(Input.GetKeyDown(KeyCode.Mouse0) && Time.time > NextShot)
         {  
             Shoot();
             bulletCount = 10;
+
         }  
     }
 
     private void Shoot()
-    {
+    {        
         if(basic && currentBullet == bulletType[0]) 
         {
             BulletSpawning(.25f, bulletSpeed);
@@ -67,14 +68,14 @@ public class Shooter : MonoBehaviour
             BulletSpawning(1.5f, bulletSpeed * 2);
         }
 
-        else if(fullAuto && currentBullet == bulletType[3] && bulletCount > 0)
+        else if(fullAuto && currentBullet == bulletType[3] && bulletCount == 10)
         {
             InvokeRepeating("FullAuto", 0, 0.1f);
         }
         
         else if(bouncy && currentBullet == bulletType[4])
         {
-            BulletSpawning(1f, bulletSpeed);
+            BulletSpawning(.75f, bulletSpeed * 1.5f);
         }
 
         // else if(gernade && currentBullet == bulletType[5] && gernadeCount > 0)
@@ -116,13 +117,15 @@ public class Shooter : MonoBehaviour
     {
         if(bulletCount > 0 && currentBullet == bulletType[3])
         {
-            BulletSpawning(.05f, bulletSpeed);
+            BulletSpawning(.025f, bulletSpeed);
         }
         else
         {
             CancelInvoke();
         }
+        
         bulletCount--;
+
     }
 
     private void BulletSpawning(float bulletTime, float bulletSpeed)

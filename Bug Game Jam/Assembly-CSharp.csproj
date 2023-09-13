@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Enemy Scripts\LookAtEnemy.cs" />
      <Compile Include="Assets\Scripts\Items\Bomb.cs" />
      <Compile Include="Assets\Scripts\AudioStuff\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyShooting.cs" />
@@ -52,6 +53,7 @@
      <Compile Include="Assets\Scripts\Enemy Scripts\Boss.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\FollowMouse.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\Player.cs" />
+     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyIndicator.cs" />
      <Compile Include="Assets\Scripts\Items\ExplosionDamage.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\HealthBar.cs" />
@@ -66,7 +68,7 @@
      <Compile Include="Assets\Scripts\Level Scripts\Wall.cs" />
      <Compile Include="Assets\Scripts\PlayerStuff\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Level Scripts\WaveStarter.cs" />
-     <Compile Include="Assets\Scripts\Enemy Scripts\EnemyIndicator.cs" />
+     <Compile Include="Assets\Scripts\LookAtObject.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyIndicator : MonoBehaviour
 {
     public GameObject indicator;
+    private LookAtEnemy indicatorLook;
     private GameObject player;
     private Renderer rd;
 
@@ -13,37 +14,36 @@ public class EnemyIndicator : MonoBehaviour
     {
         rd = GetComponent<Renderer>();
         player = GameObject.Find("Player");
+        indicatorLook = indicator.GetComponent<LookAtEnemy>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        Debug.Log(rd.isVisible);
         if(rd.isVisible == false)
         {
             if(indicator.activeSelf == false)
             {
-                Debug.Log("Indicator set to true");
                 indicator.SetActive(true);
             }
 
             Vector2 direction = player.transform.position;
-            Debug.Log(direction);
-            RaycastHit2D ray = Physics2D.Raycast(transform.position, direction, 10f, 7);
+
+            RaycastHit2D ray = Physics2D.Raycast(direction, transform.position);
 
             if(ray.collider != null)
             {
+                indicator.transform.parent = player.transform;
                 indicator.transform.position = ray.point;
-                Debug.Log(indicator.transform.position);
             }
         }
         else
         {
             if(indicator.activeSelf == true)
             {
-                Debug.Log("indicator set false");
                 indicator.SetActive(false);
             }
         }
     }
+
 }

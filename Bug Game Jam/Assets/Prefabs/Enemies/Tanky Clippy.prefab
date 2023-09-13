@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8073167940423102018}
   - component: {fileID: 8073167940423102030}
   - component: {fileID: 8073167940423102031}
+  - component: {fileID: 3877794797580470811}
   m_Layer: 3
   m_Name: Tanky Clippy
   m_TagString: Enemy
@@ -31,7 +32,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.93, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1145347471910138860}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -145,9 +147,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a5dd50649a4d444eac622f605f3d6ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  Maxhealth: 10
+  health: 7
+  Maxhealth: 7
   damageDealt: 1
+  indicator: {fileID: 7485577129293828133}
   inTrigger: 0
 --- !u!114 &8073167940423102031
 MonoBehaviour:
@@ -167,3 +170,107 @@ MonoBehaviour:
   ableToDash: 0
   dashSpeed: 0
   dash: 0
+--- !u!114 &3877794797580470811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8073167940423102021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5742d0c31ac2ec544b5b93fa529202e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indicator: {fileID: 7485577129293828133}
+--- !u!1001 &5652555381147586139
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8073167940423102017}
+    m_Modifications:
+    - target: {fileID: 2996008204088811134, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+        type: 3}
+      propertyPath: m_Name
+      value: Center
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996008204088811134, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725681591804640695, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725681591804640695, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725681591804640695, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725681591804640695, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725681591804640695, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725681591804640695, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725681591804640695, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725681591804640695, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725681591804640695, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725681591804640695, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4725681591804640695, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254515936798599387, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+        type: 3}
+      propertyPath: objectToLook
+      value: 
+      objectReference: {fileID: 8073167940423102021}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d300f66333ca8a4bb596c2bec2403ce, type: 3}
+--- !u!1 &7485577129293828133 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2996008204088811134, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 5652555381147586139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1145347471910138860 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4725681591804640695, guid: 5d300f66333ca8a4bb596c2bec2403ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 5652555381147586139}
+  m_PrefabAsset: {fileID: 0}
